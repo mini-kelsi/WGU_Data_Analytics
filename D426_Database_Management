@@ -44,8 +44,52 @@ ___________________________________________________
 
 *INSERT
   -inserts rows into a table.
+
+INSERT INTO table_name (column_name1, column_name2, ...)
+                      VALUES (DEFAULT, 'bob', 30, 150);
+
 *SELECT
   -retrieves data from a table
+
+SELECT column1, column2, ...
+FROM table_name; -- return all data from those columns.
+
 *UPDATE
   -modifies data in a table
-*
+UPDATE table_name
+SET   column_name = 2
+WHERE column_id = 3;
+
+*DELETE
+  -Deletes rows from a table.
+
+DELETE FROM table_name; -- all rows deleted!
+DELETE FROM table_name WHERE column_name = 'value'; -- delete row
+
+*CREATE TABLE
+  -Creates a new table by specifying the table and column names.
+
+CREATE TABLE Customers (
+  customerId    INT NOT NULL UNIQUE,
+  first_name    VARCHAR(255) NOT NULL,
+  age           INT CHECK(age > 18)
+  driverid      INT NOT NULL,
+  PRIMARY KEY (customerId),
+  FOREIGN KEY (LOCAL_COLUMN_NAME) REFERENCES TABLE_NAME (COLUMN_NAME),
+);
+
+______________________________________________________________
+
+1.4 Database Design and Programming
+_________________________________________
+
+*Database Design: Analysis
+  -Specifies Databases requirements without regards to a specific database system.
+  -Requirements are represented as entities, relationships, and attributes.
+  -Sometimes called: Conceptual Design
+*ER Diagram
+  -Entities, relationships, and attributes are depicted in ER diagrams.
+*Database Design: Logical Design
+  -This phase implements database requirements in a specific database system.
+  -For relational database systems, logical design converts entities, relationships, and attributes into tables, keys and columns.
+  -**The logical design is called a database schema.**
