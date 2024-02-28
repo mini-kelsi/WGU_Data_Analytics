@@ -1,13 +1,19 @@
 1.1 Database Basics
 
-Database Application
+*Database Application
   Software that helps business users interact with database systems.
-Database Adminnistrator
+*Database Adminnistrator
   Responsible for securing the database system against unauthorized users. Enforces procedures for 
 user access and database system availability.
 
 1.2 Database Systems
 ___________________________________________
 
-
-
+*Authorization
+  Many database users should have limited access to specific tables, columns, or rows of a database.
+Database systems should authorize individual users to access specific data.
+*Rules
+  Database systems ensure data is consistent with structural and business rules.
+*Query Processor
+  The query processor interprets queriers, creates a plan to modify the database or retrieve data, 
+and returns query results to the application.
