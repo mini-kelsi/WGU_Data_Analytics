@@ -1,19 +1,51 @@
 1.1 Database Basics
 
 *Database Application
-  Software that helps business users interact with database systems.
+  -Software that helps business users interact with database systems.
 *Database Adminnistrator
-  Responsible for securing the database system against unauthorized users. Enforces procedures for 
+  -Responsible for securing the database system against unauthorized users. Enforces procedures for 
 user access and database system availability.
 
 1.2 Database Systems
 ___________________________________________
 
 *Authorization
-  Many database users should have limited access to specific tables, columns, or rows of a database.
+  -Many database users should have limited access to specific tables, columns, or rows of a database.
 Database systems should authorize individual users to access specific data.
 *Rules
-  Database systems ensure data is consistent with structural and business rules.
+  -Database systems ensure data is consistent with structural and business rules.
 *Query Processor
-  The query processor interprets queriers, creates a plan to modify the database or retrieve data, 
+  -The query processor interprets queriers, creates a plan to modify the database or retrieve data, 
 and returns query results to the application.
+*Storage Manager
+  -The sotrage manager translates the query processor instructions into low-level file commands that modify or retrieve data.
+*Transaction Manager
+  -Ensures transactions are properly executed.
+  -Writes logs before applying changes to the database.
+*Metadata
+  -Data about the database, such as column names and the number of rows in each table.
+*Relational Database
+  -Stores data in tables, columns, and rows
+  -Similar to a spreadsheet
+*Relational databases are good for?
+  -Ideal for databases that require an accurate record of every transaction, such as banking, airline reservation systems, and student records.
+*SQL
+  -Structured Query Language and includes statements that read and write data, create and delete tables, and administer the database system.
+*Big Data
+  -Growth of the internet int he 1990s generated massive volumes of onlinen data, called big data, often with poorly structured or missing information.
+  -MongoDB:Big Data, open source, NoSQL
+*NoSQL
+  -The newer non-relational systems are called NoSQL, for 'not only SQL', and are optimized for big data.
+  MongoDB: Big Data, open source, NoSQL
+_______________________________________________________________
+
+1.3 Query Languages
+___________________________________________________
+
+*INSERT
+  -inserts rows into a table.
+*SELECT
+  -retrieves data from a table
+*UPDATE
+  -modifies data in a table
+*
