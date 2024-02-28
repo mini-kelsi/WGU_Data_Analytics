@@ -1,4 +1,4 @@
-1.1 Database Basics
+## 1.1 Database Basics
 
 *Database Application
   -Software that helps business users interact with database systems.
@@ -6,7 +6,9 @@
   -Responsible for securing the database system against unauthorized users. Enforces procedures for 
 user access and database system availability.
 
-1.2 Database Systems
+___________________________________________________
+
+## 1.2 Database Systems
 ___________________________________________
 
 *Authorization
@@ -39,7 +41,7 @@ and returns query results to the application.
   MongoDB: Big Data, open source, NoSQL
 _______________________________________________________________
 
-1.3 Query Languages
+## 1.3 Query Languages
 ___________________________________________________
 
 *INSERT
@@ -80,7 +82,7 @@ CREATE TABLE Customers (
 
 ______________________________________________________________
 
-1.4 Database Design and Programming
+## 1.4 Database Design and Programming
 _________________________________________
 
 *Database Design: Analysis
@@ -92,4 +94,4 @@ _________________________________________
 *Database Design: Logical Design
   -This phase implements database requirements in a specific database system.
   -For relational database systems, logical design converts entities, relationships, and attributes into tables, keys and columns.
-  -**The logical design is called a database schema.**
+  -The logical design is called a database schema.
