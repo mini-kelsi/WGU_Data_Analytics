@@ -27,7 +27,8 @@ Database systems should authorize individual users to access specific data.
      
 *Transaction Manager     
      -Ensures transactions are properly executed.     
-     -**Writes logs before applying changes to the database.**
+     -**Writes logs before applying changes to the database.**      
+
 *Metadata     
      -Data about the database, such as column names and the number of rows in each table.
      
@@ -36,7 +37,7 @@ Database systems should authorize individual users to access specific data.
      -Similar to a spreadsheet
      
 *Relational databases are good for?     
-     -Ideal for databases that require an accurate record of every transaction, such as banking, airline reservation systems, and student records.
+     -Ideal for databases that **require an accurate record of every transaction**, such as banking, airline reservation systems, and student records.
      
 *SQL     
      -Structured Query Language and includes statements that read and write data, create and delete tables, and administer the database system.
