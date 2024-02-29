@@ -701,7 +701,7 @@ WHERE column_name NOT IN (SELECT ID FROM Employee)
 - **equijoin**
   - An equijoin compares columns of two tables with the **=** operator.
 - **non-equijoin**
-  - A non-equijoin compares columns with an operator other than =, such as **< and >**.
+  - A non-equijoin compares columns with an operator other than =, such as **!=, < and >**.
 - **self-join**
   - A self-join **joins a table to itself**.
 
