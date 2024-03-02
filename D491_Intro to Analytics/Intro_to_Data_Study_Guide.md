@@ -27,13 +27,34 @@
     > Often used when their is *no clear objective or question to answer.*
    
 - Identify the fuctions of a specific career
+    > [Roles and Career Page](https://github.com/mini-kelsi/WGU_Data_Analytics/blob/WGU/D491_Intro%20to%20Analytics/Roles%20and%20Careers.md)
+    
 - List roles and fuctions
-    > 
+    > [Roles and Careers Page](https://github.com/mini-kelsi/WGU_Data_Analytics/blob/WGU/D491_Intro%20to%20Analytics/Roles%20and%20Careers.md)
+    
 - Identify the responsibilities of a data analyst in a data analystics project
 - List job skills for each role
+    > [Roles and Careers Page](https://github.com/mini-kelsi/WGU_Data_Analytics/blob/WGU/D491_Intro%20to%20Analytics/Roles%20and%20Careers.md)
+    
 - Identify key stakeholders
+   - Project team members and senior management
+     
 - Iteract with stakeholders
 - Define the roles of the stakeholders in the data analytics projects
+  - Project Sponsor
+     > Executive who has authorized the project and is responsible for ensuring the project aligns with the company's strategic goals.
+   - Project Manager
+     > Oversees the project's day-to-day operations, including coordinating with stakeholders and ensuring that the project stays on track.
+   - Financial Operations
+     > Responsible for managing the budget and finances of the project.
+   - Database Administrator
+     > Responsible for managing the data infrastructure and ensuring that the data is stored securely and efficiently.
+   - Researchers
+     > Responsible for interpreting the results of specific data.
+   - Partners
+     >External stakeholders collaborating with the company on the project.
+   - End Users (Customers)
+     >Ultimate beneficiaries of the project, as they will benefit from a more effient and optimized inventory management system.
 
   ## Section 2 - The Data Analytics Lifecycle
 
