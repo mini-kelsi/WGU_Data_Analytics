@@ -1,11 +1,34 @@
 ## Section 1 - Careers and Goals  
 
 - Define Data Analytics
+  - The process of analyzing data to extract insights
+   
 - Define Data Science
+  - The practice of using statistical methods to extract insights from data
+   
 - Differentiate between data analytics and data science
+  - **Data science focuses on _developing new algorithms and models_, while data analytics focuses on using _existing models_ to analyze data.**
+
 - Identify data analytics projects
+  - **Descriptive Analytics**
+    > Focuses on *summarizing and describing* historical data to provide insights to past trends and patterns.
+    > "What happened?" "How many times did it happen?"
+  - **Diagnostic Analytics**
+    > Identify the *root causes* of specific outcomes or events.
+    > "Why did an event happen?" "What caused it to happen?"
+  - **Predictive Analytics**
+    > Forecast future outcomes.
+    > "Why did an even happen?" "Why caused it to happen?"
+  - **Prescriptive Analytics**
+    > Recommends actions that can be taken to optimize or improve a situation.
+    > "What should we do?" "How can we prepare for it?"
+  - **Exploratory Analytics**
+    > Involves exploring and analyzing data to identify potential trends, patterns ,and relationships.
+    > Often used when their is *no clear objective or question to answer.*
+   
 - Identify the fuctions of a specific career
 - List roles and fuctions
+    > 
 - Identify the responsibilities of a data analyst in a data analystics project
 - List job skills for each role
 - Identify key stakeholders
