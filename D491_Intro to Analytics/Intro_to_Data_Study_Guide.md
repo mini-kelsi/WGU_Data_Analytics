@@ -100,29 +100,61 @@
   > Team determins the methods, techniques, workflows to be used during the subsequent model building phase.
   
 - Explain the purpose of the modeling planning phase
-  > The team explores data relationships, selects key variables, and identifies the most suitable modesl fro the project.
+  > The team explores data relationships, selects key variables, and identifies the most suitable modesl for the project.
+  > During this phase, the team refers to the hypotheses developed in the Phase 1, when they first became acquainted withth e data and understanding the business problems or domain area.
   
 - Identify the activities of the data modeling phase
+   - Decision Tree
+   - Logisitc regression
+   - automatic relevance determination
+   - multiple linear regression
+   - neural network
   
 - Identify common tools for the model planning phase
   
+   |Common Tools | Info |
+  |---|---|
+   |R | has a complete set of modeling capabilities and provides a good environment for building interpretive models with high-quality code.  Also has the ability to interface with databases via an ODBC connection and execute statistical tests and analyses against Big Data via an open source connection. |
+   | SQL Analysis Services| can perform in-database analytics of common data mining functions, involved aggregations, and basic predictive models.|
+   |SAS/ACCESS | users can connect to relational databases (such as Oracle or Terdata) and data warehouse appliances, files, and enterprise applications (such as SAP and Salesforce.com).|
+  
 - Identify common models used in the model planning phase
+  >
   
 - Identify & describe the model execution phase
-  > 
+  > Use datasets to enable the data scientist to develop the analytical model and train it while holding aside some data to test it.
   
 - Explain the purpose of the model execution phase
   > To develope datasets for testing, training and production purposes, builds and executes models based on the planning phase, and evaluates the need for more robust tools or enviroments for executing models and workflows.
   
 - Identify the activites of the model execution phase
 - Identify the common tools for the model execution phase
-- Identify & describe the communicate results phase
-  >
+
+  |  Commercial Tools   |  Info  |
+  |-------------|---------------------------|
+  |SAS Enterprise Miner | can run predictive and descriptive models based on large volumes of data     |
+  |SPSS Modeler         | offers mthods to explore and analyze data through a GUI                      |
+  | Matlab              | a high-lvl language for performing a variety of data anlaytics, algorithms and data exploration |
+  |Alpine Miner | Provides a GUI front end for users to develop analytic workflows and interact with Big Data tools and platforms on the back end |
+  | STATISTICA and Mathematica | are also popular and well - regarded data mining and analytic tools |
+
+  |Free/ Open Source Tools | Info|
+  |---|---|
+  |R and PL/R | PL/R is a preocedural language for PostgreSQL with R. This technique provides higher performance and is more scalable than running R in memory |
+  | Octave | For computational modeling, has some of the functionality of Matlab.  Is used in major universities when teaching machine learning |
+  | WEKA | Data mining software package with an analytic workbench. Can be executed within Java |
+  | Python | Provides toolkits for machine learning and analysis, such as scikit-learn, numpy, scipy, pandas, and related data visualization using matploblib |
+  | SQL | in-database implementations such as MADlib, provide an alterative to in-memory destktop analytical tools. MADlib provides open-source machine learning library of algorithms that can be executed in-database, for PostgreSQL or GreenPlum |
+  
+- Identify & describe the **communicate results phase**
+  >Phase where the team compares the outcomes of the modeling to the criteria established for success and failure.
   
 - Explain the purpose of the communicate results phase
   >Determining the project's success or failure based on the criteria developed in the discovery phase. The team identifies key findings, quantifies the business value, and develops a narrative to summarize and communicate the results to stakeholders.
 
 - Identify the activities of the communicate results phase
+  > The team must determine wither the data and model will prove or disprove the hypotheses outlined in Phase 1.  Also, the team has to to determine if the results are statistically significant and valid.  If not, thoughts of adjustments need to be discussed.
+  
 - Identify the common tools for communicating results
 - Identify & describe the operationalize phases
   > Last phase of the Data Analytics Life Cycle.
@@ -131,6 +163,17 @@
   > Team delievers reports, briefings, code, and technical documents. A pilot project may be implemented to test the models in a production environment, ensuring that the results are framed effectively and demonstrate clear value to stakeholders.
   
 - Identify the key outputs for each of the main stakeholders
+
+  | Stakeholder | Key Outputs |
+  |---|---|
+  |Project Sponsor | Presentation for Project Sponsor|
+  |Project Manager| -|
+  | BI Analyst | Presentation for Analysts |
+  | DBA | Techical Specs, Code |
+  | Data Engineer | Techical Specs, Code |
+  | Data Scientist | Presentation for Analyst, Code |
+  | Business User | Presentation for Project Sponsors |
+  
 
   ## 1.3 Defining Values for Success
 
