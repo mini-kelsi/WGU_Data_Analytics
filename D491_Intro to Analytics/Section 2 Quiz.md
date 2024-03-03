@@ -44,92 +44,35 @@
     - Corporate information system
       > A corporate information system, or data warehouse, is a central repository that stores and manages an organization's data, making it a valuable source of information for a data analytics project.
 
-12. A data analyst is assigned to analyze sales data for a multinational retail company to identify which products have the highest profit margins.  Which data quality requirement is most critical for this project?
-    - Accuracy
-      > Accuracy of the data is most important, as this is a necessary first step in calculating profit margins.  Without accurate data, any conclusion drawn would be potentially wrong.
+12. Which data sources would be most relevant for analyzing factors affecting patient satisfaction in a healthcare company?
+    - Web log data, call-center records, and survey responses
+      > Web log data, call-center records, and survey responses provide valuable insights into patient behavior and satisfaction, which important factors for analyzing patients satisfaction.
 
-13. A data analyst is tasked with understanding customer satisfaction data and is emailed a file with the data.   Which question should the data analyst ask about the data regarding where it is sourced from?
-    - When was the data collected?
-      > If a dataset was collected five years ago, that was a very long time ago and could not relate to human behavior today.
+13. A company in the renewable energy industry is working on a data analytics project to identify which areas are more likely to adopt solar power.  The data science team needs to gather relevant data sources for this project.  Which data sources are relevant for a renewable energy company looking to identify areas more likely to adopt solar power?
+    - Census and economic data, hourly weather readings, and demographic data
 
-14. Which question should be asked to determine if a data set is biased?
-    - Is the data from a self-reported survery?
-      > Severy responses can be very *subjective* based on how the questions are asked and even who is asking the questions.
+14. **Which tool is commonly used for data preparation?**
+    - OpenRefine
+      > *OpenRefine is a free, open-source tool for working with messy data, making it suitable for data preparation tasks.*
 
-15. Which technique is the most appropriate for analyzing customer demographics?
-    - Clustering
-      > Clustering is best used for customer demographics because it can **group individuals or entities based on their _characteristics_ or _behavior_.**  This can be useful in identifying patterns or segments within a population, which can then inform targeted marketing or outreach efforts.
+15. A popular travel booking platform receives a large volume of web traffic, GPS location data, and user-generated content from various sources.  The data analytics team is preparing this data for anlysis to better understand customer behavior and perferences.   Which tool would be most suitable for preparing this data?
+    - Hadoop
+      > **Hadoop is an open-source framework designed for the distributed processing of large datasets across clusters of somputers.  It can handle massive parallel ingesting and custom analyssi for web traffic parsing, GPS location analytics, and combining unstructured data feeds from multiple sources.  This makes it the most suitable choice for this travel booking platform's data preparation needs.**
 
-16. What is the most appropriate analytics technique for predicting sales for the next quarter?
-    - Regression analysis
-      > **Regression analysis is a statistical technique used to determine the relationship between a dependent variable and one or more independent variables.**
+16. Which sequence of steps should you follow during the data preparation phase?
+    - Set up sandbox, extract and transform data, condition data, explore visually
+      > This activities occur during the data preparation phase.
 
-17. What is the most appropriate data analytics technique for analyzing website traffic patterns?
-    - Heat map
-      > A heat map is a graphical representation of data that uses color coding to visualize the magnitude or frequency of a variable across two dimensions.  Heat maps display large amounts of data in a way that is easy to interpret and identify patterns.
+17. In the data analytics process, which phases focuses on identifying candidate models for clustering, classifying, or finding relationships and ensuring analytical techniques align with business objectives?
+    - Model planning
+      > This is the phase where the most suitable models are chosen based on the business goals and the types of relatonships that need to be discovered in the data.
 
-18. What is the advantage of using a decision tree over a linear regression model in a data analytics project?
-    - **Decision trees can handle nonlinear relationships between variables.**
-      > *Decision trees can model complex, nonlinear relationships between variables, while linear regression models are limited to liinear relationships.*
+18. What is the primary purpose of the model planning phase in the data analytics process?
+    - Identifying methods and aligning techniques with objectives
+      > The model planning phase aims to determing the most suitable method for the given problem and ensure that the chosen analytical techniques align with the business objectives.
 
-19. A retail grocer wants to use association rules in retail marketing to increase sales.    What would be the impact of using an association rule on sales data?
-    - By analyzing sales data, the data analyst can apply association rules to discover frequent item sets, which are groups of items often purchased together.
-      > For instance, they might find that customers who buy bread and milk are also likely to  buy eggs, butter, and cheese.  These can be grouped in a promotion.
+19. **Which activites should be the focus of the model building phase?**
+    - Partitioning the data into training, validation, and test sets
+      > During the data modeling phase, partitioning the dataset into training, validation, and test sets is a crucial activity to build and assess the predictive model's performance.
 
-20. A company wants to predict the likelihood of a customer responding to a marketing campaign.  The data set contrains both numerical and categorical variables.   Which analytics technique should the company use?
-    - Logistic regression
-      > **Logistic regression is a suitable tecnique for binary classification problems, such as prediciting the likelihood of a customer responding to a marketing campaign when the dataset contains numerical and categorical variables.**
-
-21. An e-commerce company is interested in improving the conversion rate of its website.   In which scenario should the company's analyst use an A/B test?
-    - When they want to find out whether changing the color of the "Add to Car" button will have a significant impact on sales
-      > Randomly assigning visitors to either the control or variant version of the home page ensures that the two groups are statistically similar and that any differences in conversion rates can be attributed tothe change in the "Add to Cart" button color.
-
-22. **A team working for a social media company needs to analyze customer feedback on a newly launched product using sentiment analysis.   What is the most appropriate approach for sentiment analysis in this scenario?
-    - Text mining
-      > Text mining is the process of analyzing text data to extract useful information. It is the most appropriate approach for sentiment analysis, as it deals with text data and can identify and extract the sentiment behind the words.**
-
-23. A data analyst for a retail company has collected data on customer demographics, purchase history, and marketing campaigns.  Which data analytic technique should be used to predict demand for the upcoming holiday season?
-    - Use a machine learning algorithm to predict furture deman and determine the reorder quantity for each product.
-      > This approach considers historical sales data and other relevant external factors such as senasonality, trends, and economic indicators to predict furture demand accurately.  The predicted demand can then determine the optimal reorder quantity for each product, thereby optimizing inventory management.
-
-24. A marketing company has a client who wants to know their social media engagement for the past month.  They have accounts on several social media platforms and want to compare their engagement across these platforms.   Which visualization metric should be used to find the social media engagement for the client?
-    - Heat map
-      > **A heat map would be best to visualize the interactions between posts and customer engagement due to its ability to communicate complex information through color gradients.**
-
-25. A manufacturing company wants to compare the productivity of different teams in its factory over time.  Which visualization technique should be used to present the findings of the comparison?
-    - Line chart
-      > ** line chart is the best visualization technique to show data changes over time.**
-
-26. **Which technique is the most effective for identifying patterns in large datasets?**
-    - Clustering
-      > Clustering is the most effective when dealing with large datasets, as it allows for identifying groups of similar data points without prior knowledge of the data structure.
-
-27. **Which data analytic technique is best suited for identifying outliers in a dataset?**
-    - Box plot
-      > Box plot is the most effective technique for identifying outliers in a dataset. It provides a visual representation of the distribution of data and identifies any data points located outside the range of typical values.
-
-28. What is a data requirement for logistic regression?
-    - The dependent variable has to be nominal.
-      > **Logistic regression requires a binary dependent variable to make probabilistic assessments throughout any scenario.**
-
-29. Which type of data is necessary to perform cluster analysis?
-    - Continuous
-      > Cluster analysis is a data analytics technique that groups similar objects or data points into clusters based on their similarity.  Continuous data is necessary for performing cluster analysis because it allows for the calculation of distance or similarity between data points.
-
-30. Which type of data is necessary for performing machine learning analysis?
-    - Preprocessed data
-      > Machine learning analysis is a data analytics technique used to develop predictive models by training algorithms to identify patterns and relationships in data.  Preprocessed data is necessary for performing machine learning analysis because the data must be cleaned, transformed, and standardized to ensure the accuracy and reliability of the models.
-
-31. A data analyst is analyzing the employees' salaries at a company to find a representative value that summarizes the central tendency of the data.   Which metric should be used to summarize the central tendency of the data?
-    - Median
-      > The median is the middle value in a dataset when the data is arranged in order.  It is an appropriate metric for summarizing the central tendency of the data in this scenario, as it provides informatin on the typical salary of employees. The median is less sensitive to outliers than the mean and provides a better representation of the central tendency of the data when there are extreme values.
-
-32. An organization is building a theme park where the temperature can vary wildy.  All rides should be build to handle the extremes of the temperature spectrum.   Which metric should be used in this scenario?
-    - Range
-      > The range gives data about the spread of all possible data points.
-
-33. Which metric should be used to measure the precentage of website visisotrs who leave after viewing only one page?
-    - Bounce rate
-      > The bounce rate measures the percentage of visitors who leave a website after viewing one page.
-
-   
+20.
