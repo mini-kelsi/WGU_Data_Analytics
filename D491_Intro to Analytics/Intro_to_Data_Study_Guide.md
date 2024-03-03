@@ -58,12 +58,11 @@
 
   ## Section 2 - The Data Analytics Lifecycle
 
-- Identify & describe the **discovery phase**
+- Identify & describe the discovery phase
   > First phase of the Data Analytics Life Cycle.
   
-- Explain the purpose fo the discovery phase
-  > The data team familarizes themselves with the business domain, examines relevant historical data, and assesses available resources such as people, technology, time, and data.
-  > Framing the business problem ass an analytics challenge and formulating initial hypotheses to test and explore data.
+- **Explain the purpose fo the discovery phase**
+  > To understand the business problem and develop initial hypotheses
   
 - Define the question of interest of the data analytics project
   > What is the team attempting to achieve by doing the project, and what will be considered "good enough" as an outcome of the project?
@@ -78,30 +77,26 @@
   > Can work with the data and perform analytics throughout the project.  The team needs to create a robust environment in which it can explore the data that is separate from a production environment.
   
 - Explain the purpose of the data preparation phase
-  > ETL processes are executed to prepare the data for analysis, and the team becomes thoroughly acquainted with the data.  Understanding the data in detail is critiacal to the success of the project. 
+  > To clean, normalize, and transform data
+  >  Understanding the data in detail is critiacal to the success of the project. 
   
 - Identify sources of data
-  >
+  > Corporate Information System, or data warehouse
   
 - Identify the common tools for data preparation
-   - Hadoop
-     > Can perform massively parallel ingest and custom analysis for web traffic parsing, GPS location analytics, genomic anlaysis, and combining of massive unstructured data feeds from multiple sourses.
-   - Alpine Miner
-     > Provides a graphical users interface (GUI) for creating analytics workflows, including data manipulations and a series of analytic events such as staged data-mining tecniques on Postgres SQL and other Big Data sources.
-   - OpenRefine
-     >"a free, open source, powerful took for working with messy data." Popular GUI-based tool for performing data transformations, and it's one of the most robust free tools currently available.
-   - Data Wrangler
-     > interative tool for data cleaning and transformation. outputs can be put into Java or Python.
-  
+  - OpenRefine
+    >OpenRefine is a free, open-source tool for working with meesy data, making it suitable for data preparation tasks.
+
 - Identify steps for the data preparation phase
-  > Preparing Analytic Sandbox, Preforming ETLT, Data Conditioning, Survey and Visualize
+  > Preparing Analytic Sandbox, extract and transform data, condition data, explore visually
   
 - Identify & describe the model planning phase
-  > Team determins the methods, techniques, workflows to be used during the subsequent model building phase.
+  > This is the phase where the most suitable models are chosen based on the business goals and the types of relationships that need to be discovered in the data.
+  > Focuses on identifying candidate models for clustering, classifying or finding relationships and ensuring analytical techniques align with business objectives.
   
 - Explain the purpose of the modeling planning phase
   > The team explores data relationships, selects key variables, and identifies the most suitable modesl for the project.
-  > During this phase, the team refers to the hypotheses developed in the Phase 1, when they first became acquainted withth e data and understanding the business problems or domain area.
+  > Identifying methods and alighing techniques with objectives
   
 - Identify the activities of the data modeling phase
    - Decision Tree
