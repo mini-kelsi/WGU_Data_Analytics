@@ -106,6 +106,7 @@
    - neural network
   
 - Identify common tools for the model planning phase
+  - KNIME
   
    |Common Tools | Info |
   |---|---|
@@ -124,38 +125,26 @@
   
 - Identify the activites of the model execution phase
 - Identify the common tools for the model execution phase
-
-  |  Commercial Tools   |  Info  |
-  |-------------|---------------------------|
-  |SAS Enterprise Miner | can run predictive and descriptive models based on large volumes of data     |
-  |SPSS Modeler         | offers mthods to explore and analyze data through a GUI                      |
-  | Matlab              | a high-lvl language for performing a variety of data anlaytics, algorithms and data exploration |
-  |Alpine Miner | Provides a GUI front end for users to develop analytic workflows and interact with Big Data tools and platforms on the back end |
-  | STATISTICA and Mathematica | are also popular and well - regarded data mining and analytic tools |
-
-  |Free/ Open Source Tools | Info|
-  |---|---|
-  |R and PL/R | PL/R is a preocedural language for PostgreSQL with R. This technique provides higher performance and is more scalable than running R in memory |
-  | Octave | For computational modeling, has some of the functionality of Matlab.  Is used in major universities when teaching machine learning |
-  | WEKA | Data mining software package with an analytic workbench. Can be executed within Java |
-  | Python | Provides toolkits for machine learning and analysis, such as scikit-learn, numpy, scipy, pandas, and related data visualization using matploblib |
-  | SQL | in-database implementations such as MADlib, provide an alterative to in-memory destktop analytical tools. MADlib provides open-source machine learning library of algorithms that can be executed in-database, for PostgreSQL or GreenPlum |
+  - SAS Enterprise Miner
+    > A commercial tool specifically designed for model building and execution.
   
 - Identify & describe the **communicate results phase**
   >Phase where the team compares the outcomes of the modeling to the criteria established for success and failure.
   
 - Explain the purpose of the communicate results phase
-  >Determining the project's success or failure based on the criteria developed in the discovery phase. The team identifies key findings, quantifies the business value, and develops a narrative to summarize and communicate the results to stakeholders.
+  > Presenting findings and outcomes to stakeholders
 
 - Identify the activities of the communicate results phase
   > The team must determine wither the data and model will prove or disprove the hypotheses outlined in Phase 1.  Also, the team has to to determine if the results are statistically significant and valid.  If not, thoughts of adjustments need to be discussed.
   
 - Identify the common tools for communicating results
+  - Data visualization tools and presentation software
+    
 - Identify & describe the operationalize phases
-  > Last phase of the Data Analytics Life Cycle.
+  > Communicate project benefits, set up the pilot project, and deploy in production
   
 - Explain the purpose of the operationalize phase
-  > Team delievers reports, briefings, code, and technical documents. A pilot project may be implemented to test the models in a production environment, ensuring that the results are framed effectively and demonstrate clear value to stakeholders.
+  > To pilot the model, refine it, and fully deploy it.
   
 - Identify the key outputs for each of the main stakeholders
 
@@ -178,8 +167,19 @@
 - Explain how to answer a predictive analytics question
 - Explain how to answer a prescriptive analytics question
 - Identify the methods of collecting from different sources
-- Identify the soureces of data
+- Identify the sources of data
+   - Surveys
+   - Interviews
+   - Focus Groups
+   - Web Scraping
+     
 - Identify data quality requirements for a specific analytics project
+    - If the data is:
+         - accurate
+         - complete
+         - timely
+         - relevant
+           
 - Identify data analytics techniques
 - List the impacts of different data analytic techniques
 - Identify when to use a particular analysis or reporting technique
@@ -188,27 +188,64 @@
 - Identify the data requirements for different data analytics techniques
 - Identify the correct metrics for a given data analytics problem
 
+  | Metric | Data|
+  |---|---|
+  |Range | Give data about the spread of all possible data|
+  |Median | The middle value in a dataset when the data is arranged in numeric order |
+  
+
 ## Additional Topics to Know
 
 - Key difference between Careers and Roles (Dara Scientiest, Data Engineer, Decision Scientist, and Data Analyst)
 - What does each role do within each part of the data anlaytics lifecycle?
 - Data analytics techniques
 - Regression (logical & linear)
+    - Regression analysis is a statistical technique used to determine the relationship between a dependent variable and one or more independent variables.
+    - Logical Regression
+      > Requires a binary dependent variable to make probailistic assessments throughout any scenario.
+    - Linear Regression
+      > Help to predict a continuous variable
+      
 - Clustering
+   - A technique that groups similar objects or data points into clusters based on their similarity.  **Continuous data** is necessary for performing cluster analysis because it allows for the calculation of distance or similarity between data points.
+       
 - K-means
 - P - values
+    - Measure that assesses the validity of a correlation between two variables during the communicate results phase.
+      
 - Naive Bayes Analysis
+    - Classification model based on the concept of probability and assigns class labels to instances based on the possibility of belonging to a particular class.
+      
 - Oversampling
 - Customer Life Cycles
 - Subscribtion models
 - Roles of software applications
 - Statistical models
 - Imputation
+    - Common data cleaning task that is used to address missing data in a data set.
+      
 - Hadoop
+    - An open-source framework designed for the distrbuted processing of large datasets **across clusters of computers.**
+    - Can handle massive parallel ingestin and custom analysis for web traffic parsing, GPS location analytics, and combining unstructured data feeds from multiple sources.
+      
 - Data Wrangler
+    - Process of converting unstructured data into structured data
+      
 - DS.js
-- Type 1 and Type 2 errors
-- Quantitative vs Qualitative Data
+   - Data visualization tool to create web based visualizations
+     
+- Type 1 errors
+   - Rejection of the null hypothesis when the null hypothesis is true.  The probability of making a type I error is called alpha, and type I errors are known as *false-positive errors.*
+     
+- Type 2 errors
+    - Acceptance of a null hypothesis when the null hypothesis is false.  The probability of making a type II error is callled beta, and type II errors are also known as *false-negative errors.*
+      
+- Quantitative Data
+    - interval, ratio
+      
+- Qualitative Data
+    - nominal, ordinal
+      
 - Correlation Coefficient
 - ARIMA Model
   
