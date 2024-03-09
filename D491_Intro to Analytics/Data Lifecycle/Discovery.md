@@ -1,5 +1,7 @@
 ### Discovery Phase
 
+# This is the **1st** phase in 6 phases.
+
 * In this phase, the data science team must learn and investigate the problem, develop context and understanding, and learn about the data sources needed and available for the project.
 * The team formulates initial hypotheses that can later be tested with data.
 * **Understanding the domain area of the problem is essential.**
