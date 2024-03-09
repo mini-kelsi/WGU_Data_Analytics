@@ -1,5 +1,6 @@
 ### Data Preparation Phase
-    ## Phase 2
+
+# This is the **2nd** phase out of 6 phases.
 
 * Involves **data preparation**
   > includes the steps to explore, preprocess, and condition data prior to modeling and analysis.
