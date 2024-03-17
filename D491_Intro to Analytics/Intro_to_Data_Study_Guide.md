@@ -106,7 +106,7 @@
    - neural network
   
 - Identify common tools for the model planning phase
-  - KNIME
+  - **KNIME**
   
    |Common Tools | Info |
   |---|---|
