@@ -3,6 +3,8 @@
 > Roles and Careers will be listed first along with responsibilities, and at the bottom will be explainations of responsibilities if needed.
 
 # Data Analyst  
+> A data analyst *collects* and *analyzes data* to identify patterns, trends, and insights that inform business decisions.
+
   - Data collection  
   - Data cleaning, preparation, and processing 
   - Data analysis
@@ -12,6 +14,8 @@
   - Continuous improvement
 
 # Business Intelligence Analyst  
+> A BI analyst designs and develops strategies for analzying and*presenting data* to stakeholders.
+
   - Reporting
   - Forecasting
   - Dashboard creation
@@ -20,6 +24,7 @@
   - Data governance
 
 # Decision Scientist  
+> A decision scientist applies mathematical, statistical, and computational methods to extract insights from complex datasets and *develop predictive models.*
 
   - Statisitical analysis
   - Modeling and simulation
@@ -32,6 +37,7 @@
   - Continuous improvement
 
 # Machine Learning Engineer  
+> A machine learning engineer *builds and trains algorithms* to help automate task and improve decision-making.
 
   - Data processing
   - Model selection
@@ -45,6 +51,7 @@
   - Collaboration
 
 # Data Engineer 
+> A data engineer *designs* and *builds* the systems that *store, process, and manage* copious amounts of data.
 
   - Data pipeline deveolpment
   - Data storage management
@@ -58,6 +65,7 @@
   - Collaboration
 
 # Data Scientist 
+> A data scientist uses *statistical* and *computational methods* to extract insights from complex datasets and develop predictive models.
 
   - Data analysis
   - Data visualization
