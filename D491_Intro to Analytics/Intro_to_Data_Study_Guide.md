@@ -162,11 +162,18 @@
   ## 1.3 Defining Values for Success
 
 - Identify business questions
+  
 - Explain how to answer a descriptive analytics question
+  
 - Explain how to answer a dianostic analytics question
+  
 - Explain how to answer a predictive analytics question
+  > First collect and analyze historical data to identify patterns and trends that may indicate future outcomes. After analyzing the relevant data, ,predictive models can forecast outcomes based on current and historical data.
+  
 - Explain how to answer a prescriptive analytics question
+  
 - Identify the methods of collecting from different sources
+  
 - Identify the sources of data
    - Surveys
    - Interviews
