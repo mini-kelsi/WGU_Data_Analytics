@@ -1,10 +1,10 @@
 ## Section 1 - Careers and Goals  
 
-- Define Data Analytics
-  - The process of analyzing data to extract insights
+- **Define Data Analytics**
+  - *The process of analyzing data to extract insights*
    
-- Define Data Science
-  - The practice of using statistical methods to extract insights from data
+- **Define Data Science**
+  - *The practice of using statistical methods to extract insights from data*
    
 - Differentiate between data analytics and data science
   - **Data science focuses on _developing new algorithms and models_, while data analytics focuses on using _existing models_ to analyze data.**
@@ -40,7 +40,8 @@
    - Project team members and senior management
      
 - Iteract with stakeholders
-- Define the roles of the stakeholders in the data analytics projects
+  
+- **Define the roles of the stakeholders in the data analytics projects**
   - Project Sponsor
      > Executive who has authorized the project and is responsible for ensuring the project aligns with the company's strategic goals.
    - Project Manager
@@ -62,7 +63,7 @@
   > First phase of the Data Analytics Life Cycle.
   
 - **Explain the purpose fo the discovery phase**
-  > To understand the business problem and develop initial hypotheses
+  > *To understand the business problem and develop initial hypotheses*
   
 - Define the question of interest of the data analytics project
   > What is the team attempting to achieve by doing the project, and what will be considered "good enough" as an outcome of the project?
@@ -76,27 +77,27 @@
 - Identify & describe the **data preparation phase**
   > Can work with the data and perform analytics throughout the project.  The team needs to create a robust environment in which it can explore the data that is separate from a production environment.
   
-- Explain the purpose of the data preparation phase
-  > To clean, normalize, and transform data
-  >  Understanding the data in detail is critiacal to the success of the project. 
+- **Explain the purpose of the data preparation phase**
+  > *To clean, normalize, and transform data*
+  >  *Understanding the data in detail is critiacal to the success of the project.*
   
 - Identify sources of data
   > Corporate Information System, or data warehouse
   
-- Identify the common tools for data preparation
-  - OpenRefine
+- Identify the **common tools for data preparation**
+  - **_OpenRefine_**
     >OpenRefine is a free, open-source tool for working with meesy data, making it suitable for data preparation tasks.
 
-- Identify steps for the data preparation phase
-  > Preparing Analytic Sandbox, extract and transform data, condition data, explore visually
+- Identify **steps for the data preparation phase**
+  > *Preparing Analytic Sandbox, extract and transform data, condition data, explore visually*
   
-- Identify & describe the model planning phase
-  > This is the phase where the most suitable models are chosen based on the business goals and the types of relationships that need to be discovered in the data.
-  > Focuses on identifying candidate models for clustering, classifying or finding relationships and ensuring analytical techniques align with business objectives.
+- Identify & describe the **model planning phase**
+  > *This is the phase where the most suitable models are chosen based on the business goals and the types of relationships that need to be discovered in the data.*
+  > *Focuses on identifying candidate models for clustering, classifying or finding relationships and ensuring analytical techniques align with business objectives.*
   
-- Explain the purpose of the modeling planning phase
-  > The team explores data relationships, selects key variables, and identifies the most suitable modesl for the project.
-  > Identifying methods and alighing techniques with objectives
+- Explain the purpose of the **modeling planning phase**
+  > *The team explores data relationships, selects key variables, and identifies the most suitable modesl for the project.*
+  > *Identifying methods and alighing techniques with objectives*
   
 - Identify the activities of the data modeling phase
    - Decision Tree
@@ -105,8 +106,8 @@
    - multiple linear regression
    - neural network
   
-- Identify common tools for the model planning phase
-  - **KNIME**
+- Identify **common tools for the model planning phase**
+  - **_KNIME_**
   
    |Common Tools | Info |
   |---|---|
@@ -117,36 +118,38 @@
 - Identify common models used in the model planning phase
   >
   
-- Identify & describe the model execution phase
-  > Use datasets to enable the data scientist to develop the analytical model and train it while holding aside some data to test it.
+- Identify & describe the **model execution phase**
+  > *Use datasets to enable the data scientist to develop the analytical model and train it while holding aside some data to test it.*
   
 - Explain the purpose of the model execution phase
   > To develope datasets for testing, training and production purposes, builds and executes models based on the planning phase, and evaluates the need for more robust tools or enviroments for executing models and workflows.
   
 - Identify the activites of the model execution phase
-- Identify the common tools for the model execution phase
-  - SAS Enterprise Miner
+  
+- Identify the **common tools for the model execution phase**
+  - **_SAS Enterprise Miner_**
     > A commercial tool specifically designed for model building and execution.
   
 - Identify & describe the **communicate results phase**
-  >Phase where the team compares the outcomes of the modeling to the criteria established for success and failure.
+  >*Phase where the team compares the outcomes of the modeling to the criteria established for success and failure.*
   
-- Explain the purpose of the communicate results phase
+- Explain the purpose of the communicate results phase.
   > Presenting findings and outcomes to stakeholders
 
 - Identify the activities of the communicate results phase
   > The team must determine wither the data and model will prove or disprove the hypotheses outlined in Phase 1.  Also, the team has to to determine if the results are statistically significant and valid.  If not, thoughts of adjustments need to be discussed.
   
-- Identify the common tools for communicating results
+- Identify the **common tools for communicating results**
   - Data visualization tools and presentation software
+  - Dj.3s
     
-- Identify & describe the operationalize phases
-  > Communicate project benefits, set up the pilot project, and deploy in production
+- Identify & describe the **operationalize phases**
+  > *Communicate project benefits, set up the pilot project, and deploy in production*
   
 - Explain the purpose of the operationalize phase
   > To pilot the model, refine it, and fully deploy it.
   
-- Identify the key outputs for each of the main stakeholders
+- Identify the *key outputs* for each of the *main stakeholders*
 
   | Stakeholder | Key Outputs |
   |---|---|
