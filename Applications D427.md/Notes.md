@@ -378,3 +378,47 @@
 
 ### Section 2
 
+>ALTER TABLE Department
+
+>*CHANGE* Salary Salary INT Not Null;
+------
+>ALTER TABLE Department
+
+>*ADD* Constraint MgrIDCheck CHECK;
+------
+>ALTER TABLE Department
+
+>*Drop* Index Unique NameMrg;
+------
+
+- IN operator is used in a WHERE clause to determine if a value matches one of several values.
+- BETWEEN operator provides an alternative way to determine if a value is between two other values.
+- JOIN  statement that combines data from 2 tables.
+
+**Tables must have comparable data types.**
+
+- The first table in the FROM clause of a join statement is called the *Left table*.  The second table is the *right table*.
+- INNER JOIN selects only **matching** left & right table rows.
+- FULL JOIN selects ALL left & right table rows *regardless of match*
+- LEFT JOIN selects ALL left table rows, but *only matching* right table rows
+- RIGHT JOIN select ALL right table rows but *only matching* left table rows
+- OUTER JOIN is any join that selects unmatched including left, right and full joins
+- UNION combines the two results into one table
+
+--------------
+
+- EQUIJOINS compares columns with the = operator
+- NON-EQUIJOINS compares columns with an operator other than =, like > and <.
+- 
+  **Most joins are equijoins**
+
+- SELF JOIN joins a table to itself
+- CROSS JOIN combines two tables without comparing columns
+
+  **All possible combos of rows from both tables appear in the result**
+
+- Nested query (or supery/inner query) is a query within another SQL query.
+  **Usually in the statements WHERE clause in ().**
+
+- EXIST operator returns TRUE if a subquery selects *atl least one* row and FALSE *if no rows* are selected.
+- NOT EXIST returns TRUE if a subquery selects if a 
