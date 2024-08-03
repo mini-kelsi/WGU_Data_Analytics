@@ -524,7 +524,7 @@
 
 *With check option example*
 
-# 2.9 Lab
+### 2.9 Lab
 
 Select number of moviews grouped by year.
 
@@ -534,7 +534,7 @@ Select number of moviews grouped by year.
 
 >GROUP BY Year;
 
- # 2.10 Lab
+ ### 2.10 Lab
 
  Select movie ratings with left join.
 
@@ -691,7 +691,7 @@ An instance is an element of a set:
 
 --------------
 
-Complex databases are designed in 3 phases:
+### Complex databases are designed in 3 phases:
 
 1. Analysis
 2. Logical Design
@@ -699,7 +699,7 @@ Complex databases are designed in 3 phases:
 
 ----------------------
 
-Analysis Steps
+### Analysis Steps
 
 1. Discover entities, relationships, & attributes
 2. Determine cardinatlity
@@ -708,7 +708,7 @@ Analysis Steps
 
 ------------------------
 
-Logical Deisgn Steps
+### Logical Deisgn Steps
 
 5. Implement entities
 6. Implement relationships
@@ -760,6 +760,7 @@ Logical Deisgn Steps
 In ER modeling, **cardinality** refers to the maxima & minima of relationships & attributes.
 
 - Relationship *maximum*
+  
   - greatest number of instances 1 entity can related to a single of another instance
 
 Relationship has 2 **maxima**, 1 for each of the related entities.
@@ -769,6 +770,7 @@ A related entitiy is singualr when the *maximum is one* and plural when the *max
 **On ER diagrams, maxima are shown as 1 or M.**
 
 - Relationship *minimum*
+  
   - least number of instances of one entity that can related to single instance of another entity.
 
 Relationship has 2 **minimum**, one of each of the related entities.
@@ -777,4 +779,166 @@ A related entity is *optional* when the minimum is *zero* and *required* when th
 
 **On ER diagrams, minima are shown after maxima in parentheses. I.e. M(1) or M(o)**
 
-![image](https://github.com/user-attachments/assets/11ac6f1b-1d9f-458d-bbaa-27e81e6c0b96)
+![image](https://github.com/user-attachments/assets/e499a598-8a3c-48b1-a43e-2cf1deecb9b3)
+
+--------------------------------------
+
+### Discover Entities, Relationhips & attributes
+
+1A. Identify entifies, relationships, and attributes
+1B. Draw ER diagram
+1C. List standard attribute types in glossary
+1D. Document names, synonyms, and descriptions in glossary.
+
+### Determine Cardinality
+
+2A. Determine relationship maxima & minima
+2B. Determine attribute maxima & minima
+2C. Identify unique attributes
+2D. Document Cardinality in glossary &, optionally, on ER diagram
+
+-------------------
+
+## 4.3 
+
+- **Unique attribute** describes at most one entity instance. *A unique attribute is not the same a a singular attribute*
+   - Unique attribute has at most one entity instance for each attribute value.
+   - Singular attribute has at most one attribute value for each entity instance.
+
+**'Cardinality' refers to relationships only.**
+
+  **-False**
+
+**In ER diagrams, maxima & minima are drawn for relationships only.**
+
+  **-False**
+
+**Maxima & minima usually depend on business rules.**
+
+  **-True**
+
+**In the analysis phase, cardinality is always determined after discovery is complete.**
+
+  **-False**
+
+---------------------------------
+
+## 4.4 Strong and Weak Entities
+
+- **Identifying attribute** is unique, singular, and required.
+  
+   - Identifying attribute values correspond one to one, or *identify*, entity instances.
+
+- **Strong entity** has one or more identifying attributes.
+  
+   - When a strong entity is implemented as a table, one of the identifying attributes may become the primary key.
+
+- **Weak entity** does not have an identifying attribute.
+  
+   - A weak entity usually has a relationship, called an *identifying relationship*, to another entity, called and *identifying entity*. Cardinality of the identifying entity is 1(1).
+
+**In an ER diagram, an identifying relationship has a diamond nex to the identifying entity.**
+
+![image](https://github.com/user-attachments/assets/a06bfb2f-024a-4b6c-a687-e22bcbdd6fac)
+
+*For weak entities, identifying relationships replace identifying attributes.*
+
+--------------------------
+
+### Distinguish strong and weak entitiesa
+
+3A. Identify strong and weak entities.
+3B. Determine the identifying relationship(s) for each weak entity.
+3C. Document weak entities and identifying relationships in glossary and ER diagram.
+
+--------------------------
+
+*The Project entity has a ProjectCode attribtue.*
+
+**Each project has at most one code. The ProjectCode attribute is ___.**
+
+  **-Singular** *'Singular' means each entity instance has at most one attribute value. This is the case for ProjectCode, so ProjectCode is singular.*
+
+**Each project code describes at most one project.  The ProjectCode attribute is __.**
+
+  **-Unique** *'Unique' means aech attributer value describes at most one entitiy instance. This is the case for ProjectCode, so ProjectCode is unique.*
+
+**A project may have no code. The ProjectCode attribute is ___.**
+
+  **-Optional** *'Optional' means an entitiy instance may have no attribute value.  This is the case for ProjectCode, so ProjectCode is optional.*
+
+**ProjectCode is an identifying attribute of the Project entity.**
+
+  **-False** *An identifying attribute is unique, singular, and required.  ProjectCode is optional, not required, and therefore not an identifying attribute  not an identifying attribute of Project.*
+
+**How often is an identifying entity also a weak entity?**
+
+  **-Sometimes** *An identifying entity may be either weak or strong.*
+
+**How many relationships can identify one weak entity?**
+
+  **-One or many** *A weak entity must have at least one identifying relationship. Some weak entities are identified by several identifying entities.*
+
+**How many weak entities can one entity identify?**
+
+  **Zero, one, or many** *An entity can identify any number of entities, including none.*
+
+**Distinguishing strong and weak entities is a logical design activity.**
+
+  **False** *Distinction between strong and weak entities does not depend on a specific database system.*
+
+**Determining cardinality always precedes distinguishing strong and weak entities.**
+
+  **-False** *Analysis activies are not always done in sequence. Analysis is iterative and, occasionally, steps are done out of order.*
+
+**Database designers may look for identifying relationships first, before noting weak entities.**
+
+  **-True** *Some database designers prefer to focus on identifying relationships rather than weak entities.*
+
+## 4.5 Supertype and subtype entities
+
+- **Subtype entity** is a subset of another entity type, called the **supertype entity**.
+
+**On ER diagrams, subtype entities are drawn within the supertype.**
+
+- A supertype entity usually has several subtypes. Attributes of the supertype apply to all subtypes. Attributes of a subtype do not apply to other subtypes or the supertype.
+
+![image](https://github.com/user-attachments/assets/6ec731ca-f856-4916-83d4-9cf5a575300e)
+
+- Supertype entity identifies its subtype entities.  The identifying relationsihp is called an **IsA relationship**.
+
+- **Similar entities** are entities that have many common attributes and relationships.
+  
+   - Similar entities become subtypes of a new supertype entity.
+
+- A **Partition** of a supertype entity is a group of mutually exclusive subtype entities.
+  
+  - A supertype entity can have several partitions.
+    
+  - Subtype entties within each partition are disjoint and do not shar instances.
+    
+  - Subtype entties in different partitions overlap and do shar intsances.
+
+**In diagrams, subtype entities within each partition are vertically aligned. Subtype entities in different partitions are horizontally aligned.**
+
+- *Each* partition corresponds to an *optional* **patition attribute** of the supertype entitiy.
+  
+  - The partition attribute indidcates which subtype entity is associated with each supertype instance.
+
+**An entity instance can be in two subtypes of the same partition.**
+
+  **-False**
+
+**An entity instance can be in two subtypes of different partitions.**
+
+  **-True**
+
+**Each partition attribute value corresponds to one subtype.**
+
+  **-True**
+
+**One partition attribute can correspond to several partitions.**
+
+  **-False**
+
+
