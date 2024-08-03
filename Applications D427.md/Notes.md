@@ -941,4 +941,207 @@ A related entity is *optional* when the minimum is *zero* and *required* when th
 
   **-False**
 
+----------------------------
+
+### Create supertype and subtype entities
+
+4A. Identify supertype and subtype entities.
+4B. Replace similar entities and optional attributes with wupertype and subtype entities.
+4C. Identify partitions and partitions attributes.
+4D. Documents supertypes, subtypes, and partitions in glossary and ER diagram.
+
+----------------------------
+
+Creating supertype and subtype entities is the last of four analysis steps.
+
+  1. Discover entities, relationships, and attributes
+  2. Determine cardinality
+  3. Distinguish strong and weak entities
+  4. Create supertype and subtype entities
+
+---------------------------------
+
+## 4.6 Alternative Modeling Conventions
+
+- **Crow's foot notation** depicts cardinality as a circle(zero), a short line(one), or three short lines (many).
+  
+   - The three short lines look like a bird's foot.
+
+![image](https://github.com/user-attachments/assets/916d501a-b091-4274-a580-d40dcf82ade5)
+
+- **Subject area** is a group of related entities
+
+- Refer to strong entities as *independent* and weak entities as *dependent*.
+
+-Several model conventions are standardized and widely used. Leading coventions include:
+
+  - **Unified Modeling Language (UML)** is common for software developement
+  - **IDEF1X** stands for Information DEFinition version 1X. Became popular partly due to early adoption by the US DDD.
+  - **Chen notation** appear in an early ER modeling paper by Peter Chen. Chen notation is not standarized but often appears in literature and tools.
+
+-------------------------------
+
+## 4.7 Implementing Entities
+
+**In the first step of the logical design phase, each *entity* becomes a table and each *attribute* becomes a column.**
+
+- Primary keys must be unique and not NULL, and thus correspond to unique and required attributes.
+  
+  - Primary keys should also be:
+    
+    - Stable *Values should not change*
+      
+    - Simple *Values should be easty to type and store*
+      
+    - Meaningless *should not contain descriptive information*
+
+- Stable, simple and meaningless primary keys are desirable but not *required.*  Depending on database standards, these guildlines may be violated in some cases.
+
+
+**A ___ attribute becomes a column that is never NULL.**
+
+  **-required**
+
+**A ___ primary key is easy to specify in a WHERE clause.**
+
+  **-Simple**
+
+**___ columns contain no descriptive information and make good primary keys.**
+
+  **-meaningless**
+
+**A ___ primary key reduces cascading updates in the database.**
+
+  **-stable**
+
+- A strong entity becomes a **strong table.**
+
+- An **artificial key** is a singel-column primary key created by the database designer when no suitable singel-column or composite primary key exists.
+
+**The subtype table primary key is identical to the __ table primary key.**
+
+  **-supertype** *Since subtype entity instances are always supertype entity instances, subtype tables have the same primary key as the supertype table.*
+
+**The primary key of a subtype table is also a ___.**
+
+  **-foreign key** *Since subtype tables are indentified by the supertype table, the primary key of a subtype is a foreign key that references the supertype table.*
+
+**The foreign key in the subtype table usually has the referntial integrity action ___ on primary key delete.**
+
+  **-cascade** *Since a subtype entity instance cannot exist without the corresponding supertype entity instance, delete of a supertype table row should automatically detele the corresponding subtype table row.*
+
+**The foreign key in a subtype table implements the ___ relationship between subtype and supertype entities.**
+
+  **-identifying** *Subtype entities always have a identifying relationship to the supertype, commonly called an 'IsA' relationship.
+
+- A weak entity becomes a **weak table**.
+
+--------------------------
+
+### Implement Entities
+
+5A. Implement strong entities as tables.
+5B. Create an artifical key when no suitable primary key exists.
+5C. Implement subype entities as tables.
+5D. Implement weak entities as tables.
+5E. Specify cascade and restric actions for identifying relationships.
+
+-----------------------------
+
+**After the 'implement entities' step is completed, table and column specifications are final.**
+
+  **-False** *The 'implement entities' step is a first pass. Table and column specifications are augmented and revised in subsequent logical designed steps.*
+
+**All design decisions in the 'implement entities' step are affected by the database system.**
+
+  **-False** *Some decisions, such as selection of artificial keys for strong tables, may be affected by the database system.  Other decisions, such as selection of subtype table primary keys, depend on business rules only.*
+
+**Occasionally, database design skips a formal analysis phase and begins with logical design.**
+
+  **-True** *Most databases are complex and benefit from a formal analysis phase. For small databases with just a few users and tables, and ER model might be unnecessary, and database design might begin with table specifications.*
+
+**The activities of the 'implement entities' step are always executed in sequential order.**
+
+  **-False** *All analysis and logical design steps are iterative.  Activities are not usually executed in sequential order.*
+
+
+## 4.8
+
+- A **many-one *or* one-many** relationship becomes a foeign key:
+  - The foreign key goes in the table on the 'many' side of the relationship.
+  - The foreign key refers to the primary key on the 'one' side.
+  - The foreign key name is the primary key name with an optional prefix.  The prefix is derived from the relationship name and clarifies the meaning of the foreign key.
+
+**Are NULLS allowed in the foeign key column?**
+
+  **-Allowing NULL in the foreign key column depends on relationship minimum.** 
+
+- A **one-one** relationship becomes a foreign key:
+  - The foreign key can go in the table on either side of the relationship.  Usually, the foreign key is placed in the table with fewer rows, to minimize the number of NULL  values.
+  - The foreign key refers to the primary key on the opposite side of the relationship.
+  - The foreighn key name is the primary key name with an optional prefix.  The prefix is derived from the relationship name and clarifies the meaning of the forign key.
+ 
+
+- A **many-many** relationship becomes a new weak table:
+  - The new table contains two foreign keys, referring to the primary keys of the related tables.
+  - The primary key of the new table is the composit of the two foreign keys.
+  - The new table is identified by the related tables, so primary key cascade and foreign key restrict rules are specified.
+  - The new table name consists of the related table names with an optional qualifier in between. The qualifier is derived from the relationship name and clarifies the meaning of the table.
+
+The 'implement relationships' step adds foreign keys to the initial table design.
+Foreign keys that implement dependency relationships usually have the following referntial integrity actions:
+
+- Cascade on primary key update and delete
+- Restrict on foeign key insert and update
+
+---------------------
+
+### Implement Relationships
+
+6A. Implement many-one relationships as foreign key on 'many' side.
+6B. Implement one-one relationships as foreign key in table with fewer rows.
+6C. Implement many-many relationships as new weak tables.
+6D. Specify cascade and restrict rules on foreign keys that implement dependency relationships.
+
+----------------------------------
+
+**Foreign keys always have the same name as the referenced primary key.**
+
+  **-False** *Foreign key names include the name of the referenced primary key and an optional prefix, derived from the relationship name.*
+
+**Many-one and one-one relationships are always implemented before many-many relationships.**
+
+  **-False** *Relationships can be implemented in any order.*
+
+**The primary key of a table that implements a many-many relationship is composite.**
+
+  **-True** *A many-many relationship becomes a new weak table.  The primary key of the new table is a composite of foreign keys, referring to the related tables.*
+
+4.8.1 Implementing relationships
+
+![image](https://github.com/user-attachments/assets/fb4fd4d2-f41c-4685-b77c-cae541679cd9)
+
+
+![image](https://github.com/user-attachments/assets/102abf6f-1166-43f1-9a23-cfc9ba068a96)
+
+
+------------------------------------
+
+## 4.9 Implementing Attributes
+
+In the 'implement entities' step, entities become tables and attributes become columns.  
+Singular attributes remain in the initial table, but plural attributes move to a new weak table:
+
+- The new table contains the plural attribute and a foreign key referencing the inital table.
+
+- The primary key of the new table is the composite of the plural attribute and the foreign key.
+
+- The new table is identified by the initial table, so primary key cascade and forign key restrict rules are specified.
+
+- The new table name consisits of the initial table name followed by the attribute name.
+
+If a plural attribute has a *small, fixed maximum*, the plural attribute can be implemented as multiple columns in the initial table.
+
+
+
 
