@@ -421,4 +421,98 @@
   **Usually in the statements WHERE clause in ().**
 
 - EXIST operator returns TRUE if a subquery selects *atl least one* row and FALSE *if no rows* are selected.
-- NOT EXIST returns TRUE if a subquery selects if a 
+- NOT EXIST returns TRUE if a subquery selects *no rows* and FALSE if *at least one* row is selected.
+- Replacing a subquery with a join equialvent is called **Flattening** a query.
+
+#Steps are a frist pass at flattening query:# 
+1. Retain the outer query SELECTG, FROM, GROUP BY, HAVING and ORDER BY clauses.
+2. Add INNER JOIN clauses for each subquery table.
+3. More comparison between subquery table.
+4. Add a WHERE clause with the remaining expressions in the subquery and outer quere WHERE clauses.
+5. If necessary, remove duplicate rows with SELECT DISTINCT.
+
+**After this first pass, test the flattened quesry and adjust to achieve the correct result. Verify that the orginial and flattened queries are  equivant against a varity of data.**
+
+- VIEW TABLE is a table name associated with SELECT statement, called the *view query*.
+- CREATE VIEW statement creats a view table & specifies the view name, query  and optionally, column names.
+
+>CREATE VIEW ManagerView
+>AS SELECT DepartmentName, EmployeeName,
+>AS ManagerName
+>FROM Department, Employee
+>WHERE ManagerID = EmployeeID;
+
+- A table specified in the view query's FROM  clause is called a *base table*.
+- **Materialized view** is a view for which data is sotred at all times.
+
+- Advantages of views
+  - Protects sensitive data
+  - Save complex data queries
+  - Save optimized queries
+
+**Using materialized views always imporves database performace.**
+
+  **-False**
+
+**The performance of a user query on a view is indentical to the performance of the corresponding merging query on base tables.**
+
+  **-True**
+
+**A view query can reference another view table.**
+
+  **-True**
+
+**In MySQL, two different queries that generate the same result table always have the exeustion time.**
+
+  **- False**
+
+**Views can be used to hide rows as well as columns from database users.**
+
+  **-True**
+
+>INSERT INTO AccountView (DepartmentName)
+>Values(Music Department)
+**-Invalid**
+     **The INSERT does not specify a primary key value. Since the base table primary key may not be null, the query is invalid.**
+
+>UPDATE AccountView
+>SET DepartmentName = "Information Technology Department'
+>WHERE Code = 'Comp';
+**-Valid**
+   **The UPDATE specifies the primary key, so the base table row is clear.**
+
+>UPDATE AccountView
+>SET Difference = 4400
+>WHERE Code = 'Comp';
+**-Invalid**
+    **The UPDATE does not specifiy how the Differance value is allocated to base table columns Budget and Actual.**
+
+>DELETE FROM AccountView
+>WHERE DepartmentName = 'History Department'
+**-Valid**
+   **The WHERE clause clearly indicates which base table row should be deleted.
+
+- To prevent inserts/updates that appear to fail, databases that support view updates have on optional WITH CHECK OPTION clause. WITH CHECK OPTION is specified, the database rejects inserts & updates that do not statisfy the view query WHERE clause. **The database generates an error message that explains the vioplation instead.**
+
+>CREATE VIEW ViewName [(column1, column2,...)]
+>AS Selects Statement
+>[WITH CHECK OPTION];
+*With check option example*
+
+#2.9 Lab#
+
+Select number of moviews grouped by year.
+
+>SELECT Year, COUNT(Title)
+>FROM Movie
+>GROUP BY Year;
+
+ #2.10 Lab#
+
+ Select movie ratings with left join.
+
+ >SELECT M.Title, M.Year, R.Description
+>FROM Movie AS M
+>LEFT JOIN Rating AS R
+>ON M.RatingCode = R.Code;
+
