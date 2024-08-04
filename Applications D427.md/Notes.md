@@ -1142,6 +1142,58 @@ Singular attributes remain in the initial table, but plural attributes move to a
 
 If a plural attribute has a *small, fixed maximum*, the plural attribute can be implemented as multiple columns in the initial table.
 
+---------------------------
 
+![image](https://github.com/user-attachments/assets/dcc7b75a-51d4-4529-bb70-ba7c5f3a1eb4)
+
+
+**What is the name of the new table?**
+
+  **-BookingChangeTimestamp** *The name of the new table containing a plural attribute combines the initial table name and the attribute name.*
+
+**What is the primary key of the new table?**
+
+  **-(FlightNumber, PassengerNumber, ChangedTimestamp)** *All three columns of the new table are necessary for uniqueness and must be included in the compostie primary key of the new table.*
+
+**Which column is a foreign key in the new table?**
+
+  **-(FlightNumber, PassengerNumber)** *(FlightNumber, PassengerNumber) is the primary key of the initial table containing ChangeTimestamp.  When a plural attribute becomes a new dependent table, the primary key of the inital table becomes a foreign key.*
+
+--------------------------------------
+
+**Attribute names always include an attribute type.**
+
+  **-True** *Every attribute name includes the associated attribute type, preceded by an optional entity name and qualifier.*
+
+**Data types are independent of the database system.**
+
+  **-False** *Database systesm support different data types. For this reason, standard data types are specified for attribute types during logical design,m when the database system is considered, rather than during analysis.*
+
+**Data type depends on attribute cardinality.**
+
+  **-False**  *Usually, cardinality is unrelated to data type. Data type of each column can be specified without regard to attribute cardinality.*
+
+----------------
+
+### Implement Attributes
+
+7A. Implement plural attributes as new weak tables.
+7B. Specify cascade and restrict rules on new foreign keys in weak tables.
+7C. Specify column data types corresponding to attribute types.
+7D. Enforce relationship and attribute cardinality with UNIQUE and NOT NULL keywords.
+
+-------------------
+
+**Plural attributes are implemented as new weak tables.**
+
+  **-True**
+
+**The logical design phase ends when attributes have been implemented as columns.**
+
+  **-False** *Following attribute implementation, table are reviewed for third normal form.  Tables that violate third normal form may be revised to eliminate redundant data.*
+
+**An attribute name indicates the data type of the corresponding column.**
+
+  **-True** *Attribute names contain a standard attribute type. Each attribute type corresponds to a data type, documented in the glossary.*
 
 
