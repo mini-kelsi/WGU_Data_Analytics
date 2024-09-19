@@ -135,4 +135,42 @@
    **_What is the output of print('You are', age, 'years old.')_**
     -**You are 22 years old.**
 
-  **_
+## 2.4 Errors
+
+- **Syntax error** is a kind of mistack to violate a programming language's rule on how symbols can be combined to create a program.  'An example is putting multiple prints on the same line.'
+
+   **_print(num_dogs)._**
+    -**Error**
+  
+  **_print("Dogs:"num_dogs)_**
+    -**Error**
+
+  **_print('Woof!")_**
+    -**Error**
+
+  **_print(Woof!)_**
+    -**Error**
+
+  **_print("Hello + friend!")_**
+    -**No Error**
+
+  **_Experienced programmers write an extire program before running and testing the code._**
+    -**False**
+
+- **Runtime error** is wherein a program's syntax is correct but the program attempts an improssible operation, such as dividing by zero or multiplying strings together (like 'Hello' *'ABC').
+
+- Abrupt and unintended termination of a program is often called a **crash** of the program.
+
+![image](https://github.com/user-attachments/assets/94ac8356-86ec-4a48-85ff-151aa7d60eca)
+
+![image](https://github.com/user-attachments/assets/0f151f96-6aa1-4401-9984-abeec3f87a00)
+
+- A **logic error** is where the program is logically flawed.  The program would load correctly but would not behave as intended.
+
+- A logic error is often called a **bug**.
+
+- 
+
+
+
+  
