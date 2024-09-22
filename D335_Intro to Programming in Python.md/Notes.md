@@ -330,5 +330,162 @@
 
 - A **variable** is a named item, such as x or num_people, used to hold value.
 
-- **Assignment statement** assigns a variable with a vlaue, such as x=5.  That statement means x is assigned with 5, and x keeps that value during subsequent statements, until x is assigned again. 
+- **Assignment statement** assigns a variable with a vlaue, such as x=5.  That statement means x is assigned with 5, and x keeps that value during subsequent statements, until x is assigned again.
 
+  *In programming, = is an assignment of a left-side variable with a right-side value. x=5 is read as "x is assigned with 5"*
+  
+*Indicate which assignment statements are valid.*
+
+  **_x = 1_**
+    
+  -**Valid**
+
+  **_x = y_**
+    
+  -**Valid**
+
+  **_x = y + 2_**
+   
+  -**Valid**
+
+  **_x + 1 = 3_**
+  
+  -**Invalid**
+
+  **_x + y = y + x_**
+    
+  -**Invalid** 
+
+*Given variables x, y, and z.*
+
+**_x = 9,     y= x + 1,      What is y?_**
+ -**10**
+
+ **_x = 9,  y = x + 1,  What is x?_**
+  -**9**
+
+  **_x = 9, y = x + 1, x = 5, What is y?_**
+   -**10**
+
+- Increasing a variable's value by 1, as in x = x + 1, is common and known as **incrementing** the variable.
+
+*Indicate the value of x after the statements execute.*
+
+  **_x = 5, x = x + 7_**
+   -**12**
+
+  **_x = 2, y = 3, x = x (*)y, x = x(*) y_**
+   -**18**
+
+  **_y = 30, x = y + 2, x = x + 1_**
+   -**33**
+
+  **_Complete this statement to increment y: y=___ _**
+   -**y+1**
+
+## 3.2 Identifiers
+
+- An **identifier** (also called a name) is a sequence of letters, underscores and digits and must start with a letter or an underscore.
+
+- Python is **case sensitive**
+
+- **Reserved words** (keywords) are words that are part of the language that cannot be used as a programmer-defined name. My language editors will automatically color a program's reserved words.
+
+ *Which of the following are valid names?*
+
+ **_numCars_**
+
+  -**Valid**
+
+**_num_cars1_**
+
+  -**Valid**
+
+**__numcars2_**
+
+  -**Valid**
+
+**_num cars_**
+
+  -**Invalid**
+
+**_3rd_place_**
+
+  -**Invalid**
+
+**_third_place__**
+
+  -**Valid**
+
+**_third_place!_**
+
+  -**Invalid**
+
+**_output_**
+
+  -**Valid**
+
+**_return_copy_**
+
+  -**Valid**
+
+
+- **PEP 8** is a document that outlines the basics of how to write Python code neatly and consistently.
+
+- PEP 8 is an acronym for Python Enhancement Proposal.
+
+
+## 3.3 Objects
+
+- An **object** represents a value and is automatically created by the interpreter when executing a line of code.
+
+- Deleting unused objects is an automatic process called **garbage collection** that helps to keep the memory of the computer less utilized.
+
+- **Name binding** is the process of associating names wih interpreter objects. *An object can have more than one name bound to it, and every name is always bound to exactly one object.*
+
+- Each Python object has three defining properties: value, type and identity.
+   - **Value** A value such as "20", "abcdef", or 55.
+   - **Type** The type of the objec, such as integer or string.
+   - **Identity** A unique identifier that describes the object.
+ 
+- The built-in function **type()** returns the type of an object.
+  
+- **Mutability** indicates whether the object's value is allowed to be changed.
+
+- Integers and strings are **immutable**; modifying their values with assignment statements results in new objects being created and the anmes bound to the new object.
+
+- Python provides a built-in function **id()** that gives the value of an object's identity.
+
+  **_Which built-in function finds the type of an object?_**
+   -**type()**
+
+  **_Write an expression that gives the identity of a variable called my_num._**
+  -**id(my_num)**
+
+## 3.4 Numeric types: Floating - Point
+
+- A **floating-point number** is a real number, like 98.6, 0.0001, or -666.667.
+
+- **Float** is a data type for lfoating-point numbers.
+
+- A **floating-point literal** is written with the fractional part even if the fraction is 0, as in 1.0, 0.0, or 99.0.
+
+- A floating-point literal using **scientific notation** is written using an e preceding to the power of 10 exponent, as in 6.02e23 to represent 6.02x10^23.
+
+  *The e stands for exponent.*
+
+   **_Type 1.0e-4 as a floating-poihnt literal with a single digit beofre and four digits  after the decimal point._**
+  
+    -**0.0001**
+
+  **_Type 7.2e-4 as a floating-point literal with a single digit before and five digits after the decimal point._**
+  
+    -**0.00072**
+
+  **_Type 540,000,000 as a floating-point literal using scientific notation with a single digit before and after the decimal point._**
+  
+    -**5.4e8**
+
+  **_Type 0.000001 as a floating-point literal using scientific notation with a single diit before and after the deciaml point._**
+  
+  
