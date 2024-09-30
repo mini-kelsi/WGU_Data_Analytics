@@ -488,4 +488,369 @@
 
   **_Type 0.000001 as a floating-point literal using scientific notation with a single diit before and after the deciaml point._**
   
-  
+## 3.5 Arithmetic Expressions
+
+- An **expression** is a combination of items, like variables, literals, operators, and parentheses, that evalutes to a value, like 2*(x+1).
+
+- A **literal** is a specific value in code like 2.
+
+- An **operator** is a symbol that performs a built-in calculation, like +.
+
+![image](https://github.com/user-attachments/assets/535853fc-d006-4738-89d3-8c0240abfda6)
+
+*Indicate which are valid expressions. x and y are variables.*
+
+**_x + 1_**
+
+ -**Valid**
+
+**_2 * ( x - y )_**
+
+ -**Valid**
+
+**_x_**
+
+ -**Valid**
+
+**_2_**
+
+ -**Valid**
+
+**_2x_**
+
+ -**Not Valid_** *In programming, multiplaction typicaly mujst be indicated explicitly using the * operator.*
+
+**_2 +(xy)_**  
+
+ -**Not Valid**
+
+**_y = x + 1_**
+
+ -**Not valid** *y-x+1 is an  assignment and not itself an expression.*
+
+ --------
+
+ *Does the expression correctly capture the intended behavior?*
+
+ **_6 plus num_items:
+ 6 + num_items_**
+
+  -**Yes**
+
+**_6 times num_items:
+6 x num_items_**
+
+ -**No**  *The multiplication operator is * not x.*
+
+**_total_days divided by 12:
+total_days / 12_**
+
+ -**Yes**
+
+**_5 times t:
+5t_**
+
+ -**No**
+
+**_The negative of user_val:
+-user_val_**
+
+-**Yes**
+**_n factorial:
+n!_**
+
+ -**No** *Python doesn't use the ! symbol for factoral.*
+
+---
+
+- An expression **evaluates** to a value, which replaces the expression.
+
+- An expression is evaluated using the order of standard mathematics, and such order is known in programming **precedence rules**
+
+![image](https://github.com/user-attachments/assets/b96d12cb-0834-48cc-96f6-e046a0be61a1)
+
+---
+
+*Select the expression whose parentheses match the evaluation order of the original expression.*
+
+**_y+2*z_**
+
+ -**y+(2*z)**
+
+**_z/2-x_**
+
+ -**(z/2)-x**
+
+**_x*y*z_**
+
+ -**(x*y)* z**
+
+**_X+1*y/2_**
+
+ -**x+((1*y)/2)**
+
+**_x/2+y/2_**
+
+ -**(x/2)+(y/2)**
+
+**_What is total_count after executing the following?
+num_items=5
+total_count= 1 + (2 * num_items) *4_**
+
+ -**41**
+
+## 3.6 Python Expressions
+
+- A good practice is to include a single space around operators for readability, as in num_items + 2, rather than num_items+2.
+
+- Minus (-) used as negative is known as **unary minus**
+
+- Special operators called **compound operators** provide a shorthand way to update a variable, such as age **+=** 1 being shorthand for age = age + 1. Other coumpound operators include -=, *=, /= and %=.
+
+![image](https://github.com/user-attachments/assets/fc32c5fe-f667-4720-b875-52ca344cccc5)
+
+*Compound Operators*
+
+**_num_atoms is initally 7. What is num_atoms after:
+num_atoms += 5?_**
+
+ -**12**
+
+**_num_atoms is initally 7. What is num_atoms after:
+num_atoms *= 2?_**
+
+ -**14**
+
+**_Rewrite the statemtent using a compound operator, or type: Not possible
+car_count = car_count + 1_**
+
+ -**car_count /= 2**
+
+**_Rewrite the statement using a compound operator, or type: Not possible
+num_items = box_count + 1_**
+
+ -**Not possible** *A compound operator is shorthand for when a variable is updated, not for a more general assignment.*
+
+**_The following code correctly assigns num_years with an integer value of 2 billion._**
+
+**_num_years = 2,000,000,000_***
+
+ -**False** *Commas aren't allowed in an integer literal.*
+
+![image](https://github.com/user-attachments/assets/3c14a150-7c3a-4911-9320-93ab45c269e7)
+
+![image](https://github.com/user-attachments/assets/da8ac2f1-34c1-4a2b-b7bc-6dd39a36784b)
+
+
+## 3.7 Division and Modulo
+
+-The division operator / performs division and returns a floating-point number. Ex:
+
+  - 20 / 10 is 2.0
+    
+  - 50 / 50 is 1.0
+    
+  - 5. 10 is 0.5
+
+
+- The floor divison operator // can be used to round down the result of a floating-point division to the closest smaller whole number value.  The resulting value is an integer type if both operands are integers; if either operand is a float, then a float is returned:
+
+   - 20 // 10 is 2
+ 
+   - 50 // 50 is 1
+ 
+   - 5 // 10 is 0 (5/10 is 10 and the remainder 5 is thrown away)
+ 
+   - 5.0 // 2 is 2.0
+
+- For division, the second operand of / or // must never be 0, because division by 0 is mathematically undefined.
+
+*Determine the result. Type "Error" if the program would terminate due to division by 0.  If the answer is a floating-point number, answer the form #. #, even if the answer is a whole number.*
+
+**_12 / 4_**
+
+ -**3.0**
+
+**_5 /10_**
+
+ -**0.5**
+
+**_0.5 // 2_**
+
+ -**2.0**
+
+**_100 / 0_**
+
+ -**Error** *100/0 is undefined and causes the program to terminate.*
+
+- The **modulo operator(%)** evaluates the remainder of the division of two integer operands.
+
+**_50 % 2_**
+
+ -**0** *50 / 2 is 25 with remainder 0.*
+
+**_51 % 2_**
+
+ -**1** *Note that any odd number %2 is 1, while any even number % 2 is 0.*
+
+**_78 % 10_**
+
+ -**8** *78 / 10 is 7 with remainder 8.*
+
+**_596 % 10_**
+
+ -**6** *Note that any number % 10 yields the digit in the rightmost (1s) place, in this case 6.*
+
+**_100 % (1 // 2)_**
+
+ -**Error** *(1 // 2 ) evaluates to a 0. 100 % 0 is undefined (as 100/ 0 is undefined) and causes the program to terminate.*
+ 
+ -----
+
+**_Given a non-negative number x, which expression has the range 5 to 10?_**
+
+ -**(x % 6) + 5** *% 6 yields 0 to 5. Then + 5 yields 5 to 10.*
+
+**_Given a non-negative number x, which expression has the range -10 to 10?_**
+
+ -**(x % 21) - 10_** *x % 21 yields 0 to 20. The -10 yields -10 to 10.*
+
+**_Which gets the tens digit of x. Ex: If x=693, which expression yields 9?_**
+
+ -**(x // 10) % 10_** *x // 10 shifts right one place, putting the tens digit in the ones place.  Then % 10 gets the (new) ones digit. Ex: 693 // 10 is 69, then 69 % 10 is 9.*
+
+**_Given a 16-digit credit card number stored in x, which expression gets the last (rightmost) four digits? (assume the fourth digit from the right is non-zero.)_**
+
+ -**x % 10000** *x % 10000 yields 0 -9999, being the rightmost four digits.  To get other digits like the next four digits, divide first to shift the desired digits to the rightmost digits, then use % to get just those digits.*
+
+## 3.8 Module Basics
+
+- Programmers typically write Python program code in a file **script** and execute the code by passing the script as in put to the Python interpreter.
+
+- A **module** is afile containing Python code that can be used by other modules or scripts.
+
+- A module is made available for use via the **import** statement.
+
+- Once a module is imported, any object defined in that module can be accessed using **dot notation.**
+
+![image](https://github.com/user-attachments/assets/3605a47b-0e6b-42a2-82aa-649303eafb44)
+
+![image](https://github.com/user-attachments/assets/ca5553a8-228e-461a-b8c9-efe860a82fd3)
+
+## 3.9 Math Module
+
+- Python comes with a standard **math module** to support such advanced math operations.
+
+- A **module** is Python code located in another file.  The programmer can import the module for use
+
+- A **function** is a list of statements that can be exectued simply by referring to the function's name.
+
+- The process of invoking a function is referred to as a **function call**.
+
+- The item passed to a function is referred to as an **argument**.
+
+![image](https://github.com/user-attachments/assets/4266fbc4-0be9-407f-abfb-5e6f1119cc47)
+
+*Determine the final value of z.*
+
+**_x = 2.3
+z = math.ceil (x)_**
+
+ -**3**
+
+**_x = 2.3   z = math.floor (x)_**
+
+ -**2**
+
+**_z = 4.5    z = math.pow (math.floor (z), 2.0)_**
+
+ -**16**  *math.floor(z) returns 4. Then math.pow(4, 2.0) returns 16.0.*
+
+**_z = 15.75  z = math.sqrt (math.ceil (z))_**
+
+ -**4.0** *math.ceil(z) returns 16. Then, math.sqrt(16) returns 4.0.*
+
+**_z = 4    z = math.factorial (z)_**
+
+ -**24** 
+
+ ## 3.10 Representing Text
+
+ - Python uses **Unicode** to represent every possible character as a unique numbr, known as **code point.**
+
+ - A **newline** character, which indicates the end of a line of text, is encoded as 10.
+
+ - The \ is known as a **backslash**
+
+ - Upon reaching a \, the interpreter reconizes that item as the start of a special character's two-item sequence and then looks at the enxt item to determine the special character.  The two-item dequence is called an **escape sequence**.
+
+![image](https://github.com/user-attachments/assets/d5bb8dcb-3f6e-4900-a29d-f167bffdaf02)
+
+*Escape Sequences*
+
+**_What is the output of print('\\c\\users\\juan')**
+
+ -**/c/users/juan**
+
+**_What is the output of print('My name is \'Tater Tot\'.')_**
+
+ -**My name is 'Tator Tot.'**
+
+**_What is the output of print('10...\n9...')_**
+
+ -**10...
+ 9...**
+
+ - Excape sequences can be ignored using a **raw string**. A raw string is created by adding a 'r' before a string literal, as in r'this is a raw string\' ', which would output as this is a raw string\'.
+
+ - The built-in function **ord()** returns an encoded integer value for a string of length one.
+
+ - The built-in funcion **chr()** returns a string of one character for an encoded integer.
+
+**_Complete the code to output *\\*_**
+
+ -**print(r"\\")**
+
+**_Use a raw striing literal to assign "C:\file.doc" to my_string (without quotes)._**
+
+ -**my_str = r'C:\file.doc'**
+
+## 4.1 String Basics
+
+- A **string** is a sequence of characters, like the text MARY, that can be stored in a variable.
+
+- A **string literal** is a string value specified in the course code of a program.
+
+- A programmer creates a string literal by surrounding ext with single or double quotes, such as 'MARY' or "MARY".
+
+- The string type is a special construct known as **sequence type**.
+
+**_Which answer creates a string variable first_name with a value 'Daniel'?_**
+
+ -**first_name = 'Daniel'**
+
+**_Which answer prints the value of the first_name variable?_**
+
+ -**print(first_name)**
+
+**_Which answer assigns first_name with a stirng read from input?_**
+
+ -**frist_name = input('Type your name:')**
+
+**_Which answer assigns first_name with an empty string?_**
+
+ -**first_name = ' '**
+
+- The **len()** built-in function can be used to find the length of a string.
+
+**_What is the length of the string "Santa"?_**
+
+ -**5**
+
+**_Write a statement that prints the length of the string variable first_name._**
+
+ -**print(len(first_name))**
+
+- A programmer can access a character at a specific index by appending **brackets []** containing the index.
+
+- 
