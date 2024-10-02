@@ -851,6 +851,67 @@ z = math.ceil (x)_**
 
  -**print(len(first_name))**
 
+ ----
+
+- As a sequence type, every character in a string has an idex, or position, starting at 0 from the *leftmost* character.
+
+  - For example, the 'A' in string 'ABC' is at index 0, 'B' is at index 1, and 'C' is at index 2.
+ 
+  - **Note** that negative indices can be used to access characters starting from the *rightmost* character of the string, instead of the leftmost.
+
 - A programmer can access a character at a specific index by appending **brackets []** containing the index.
 
-- 
+*String Indexing*
+
+**_What character is in index 2 of the string "America"?_**
+
+ -**e** *The first character "A" has index 0, 'm' has index 1, and index 2 is "e".*
+
+**_Write an expression that accesses the first character of the string my_country._**
+
+ -**my_country[0]** *The first character is in position 0.*
+
+**_Assign my_var with the last character in my_str. Use a negative index._**
+
+ -**my_var = my_str[-1]** *An index of -1 refers to the last character in the string.*
+
+*Writing or altering individual chacters of a string variable is not allowed.*
+
+- An assignment statement must be used to update an entire string variable.
+
+- **String Concatenation** is a program that can add new characters to the end of a string
+
+![{1C6655E5-31D1-45A7-AC4A-5E4964186A32}](https://github.com/user-attachments/assets/40ac200e-f888-47ce-9cb4-989f1f0dcff7)
+
+![{B06057EC-3B43-4039-BA86-9A8ABEDC65FF}](https://github.com/user-attachments/assets/c939fcea-4b87-4692-86ff-646273d4b32a)
+
+![{DD1739B7-9D90-4198-BA36-DAFEA19249D9}](https://github.com/user-attachments/assets/06f0cd64-19be-4dbe-8c06-1bb46b5108cf)
+
+![{E270C123-976F-46D8-A649-5F24A4149DE2}](https://github.com/user-attachments/assets/cc039f90-8287-498d-acb7-fdb5aa3139cd)
+
+![{49DBE192-8335-4745-9B6D-A0662CEF11E8}](https://github.com/user-attachments/assets/98988baf-2c4d-4172-813a-f9145e594296)
+
+-----
+![{5474B206-BC23-4B7A-A3DD-AD19EB2B26C9}](https://github.com/user-attachments/assets/15097031-f5aa-4be3-b573-73437bdf6e16)
+
+![{878E714E-2B2D-4524-B622-1B348D91B62A}](https://github.com/user-attachments/assets/e449e976-19d2-48bf-a27e-3bcba7a44363)
+
+## 4.2 List Basics
+
+- A **container** is a construct used to gruop related values together and contains references to other objects instead of data.
+
+- A **list** is a container created by surrounding a sequence of variables or literals with brackets [].
+
+- A list item is called an **element**
+
+**_Write a statement that creates a list called my_nums, containing the elements 5, 10, and 20._**
+
+ -**my_nums = [5,10,20]**
+
+**_Write a statement that creates a list called my_list with the elements -100 and the string 'lists are fun'._**
+
+ -**my_list = [-100, 'lists are fun']**
+
+**_Write a statement that creates an empty list called class_grades._**
+
+ -**class_grades = []**
