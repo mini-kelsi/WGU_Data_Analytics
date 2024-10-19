@@ -1240,8 +1240,174 @@ house_prices = ['$140,000', '$550,000','$480,000'] exists.*
 
 - The **del** keyword is used to remove entries from a dictionary: del prices ['papaya'] removes the entry whoes key is 'papaya'.
 
-- 
+*Adding new entries to a dictionary:*
 
+   - dict[k] =v: Adds the new key-value pair k-v, if dict[k] does not already exist.
+   - Example: students['John'] = 'A+'
+
+*Modifying existing entries in a dictionary:*
+
+   - dict[k]=v: Updates the existing entry dict[k], if dict[k] already exists.
+   - Example: students['Jessica'] = 'A+'
+
+*Removing entries from a dictionary:*
+
+   - del dict[k]: Deletes the entry dict[k].
+   - Example: del students['Rachel']
+
+-----------------------------
+*Modifying dictionaries*
+
+**_Which statement adds 'pears' to the following dictionary?_**
+> prices = {'apples': 1.99, 'oranges' : 1.49, 'kiwi' : 0.79}
+
+  - **prices['pears'] = 1.79**   *The assignment operator is used to add a new key-value pair to an already existing dictionary.*
+
+**_Executing the following statements produces a KeyError:_**
+>prices = {'apples' : 1.99, 'oranges' : 1.49, 'kiwi' : 0.79}
+>
+>del prices ['limes']
+
+  - **True**   *KeyError occurs if a reque3sted key does not exist in the dictionary.*
+
+**_Executing the following statements adds a new entry to the dictionary:_**
+>prices = {'apples' : 1.99, 'oranges' : 1.49, 'kiwi' : 0.79}
+>
+>prices['oranges'] = 1.29
+
+  - **False**   *'oranges' is a key that already exists in the dictionary prices; therefore, the value for 'oranges' is modified and no new entry is added.*
+
+--------------------
+
+![{8AFD67C7-5090-4FD6-9F79-13A938164241}](https://github.com/user-attachments/assets/099d8473-acfa-4d58-bdac-45b9230e130a)
+
+----------------------
+
+## 4.6 Common Data Type Summary
+
+- **Numeric types** int and float represent the most common types used to store data.
+  
+   - All numeric types support the normal mathematical operations such as addition, subtraction, mutliplation, and division, among others.
+
+![{BD1D309A-C302-4216-8C54-88E7C51DABEE}](https://github.com/user-attachments/assets/0a74ca17-0aa2-437c-92db-b3cee0d679b2)
+
+- **Sequence types** string, list, and tuple are all contrainers for collections of objects ordered by position in the sequence, where the first object has an index of 0 and subsequent elements have indices 1, 2, etc.
+
+- A list and a tuple are very similar, except that a list is mutable and individual elements may be edited or removed. **Conversely**, a tuple is immutable and individual elements may not be edited or removed.
+
+- List and tuples can contain any type, whereas a string contains only single-characters. Sequence-type functions such as len() and element indexing using brackets [] can be applied to any sequence type.
+
+- The only **mapping type** in *Python* is the dict type.
+
+--------
+*Common data types*
+
+**_The list ['a', 'b', 3] is invalid because the list contains a mix of strings and integers._**
+
+  -**False**   *List can contain mixes of types.*
+
+**_int and float types can always hold the exact same values._**
+
+  -**False**   *int types only represent integers (1,2,3), whereas floats can be decimal values (1.5, 16.99).*
+
+**_A sorted collection of integers might best be contained in a list._**
+
+  -**True**   *Lists contain ordered sequences of elements, so it would make sense to keep such a collection in a list.*
+
+----------------
+
+- A programmer might use a list when data has an order, such as lines of text on a page.
+
+- A programmer might use a tuple instead of alist if the contained data should not change.
+
+- If the order is not important, a programmer might use a dictionary to capture relationships between elements, such as student names and grades.
+--------------------------
+*Choosing among different container types.*
+
+*Choose the container that best fits the described data the best.*
+
+**_Student test scores that may later be adjusted, ordered from best to worst._**
+
+  - **list**   *List should be used for ordered data, especially if the data can change.*
+
+**_A single student's name and their final grade in the class._**
+
+  - **tuple**   *A student's final class grade is a pair of strings that doesn't change.*
+
+**_Names and current grades for all students in the class._**
+
+  - **dict**   *A dictionary can provide a map from names to grades, allowing for updates as the class progresses.*
+-----------------------
+
+![{E2302BDD-FE27-4678-A909-B6C9E4835303}](https://github.com/user-attachments/assets/5e5ac025-4910-4a85-a6b4-806137217d77)
+
+----------------------
+
+## 4.8 Type Conversions
+
+- A **type conversion** is a conversion of one type to another, such as an int to a float.
+
+- An **implicit conversion** is a type converison automatically made by the interpreter, usually between numeric types.
+
+- 1 + 2 returns an integer type.
+
+- 1 + 2.0 returns a float type.
+
+- 1.0 + 2.0 returns a float type.
+
+- *int-to-float* conversion is straightfoward: 25 becomes 25.0.
+
+- *float-to-int* conversion just drops the fraction: 4.9 becomes 4.
+
+![{83C17D9E-AF2E-4804-A66F-8C1D7A3CE18B}](https://github.com/user-attachments/assets/ca2e3d47-76fe-428b-bbd8-af7418785aca)
+
+--------------------------------
+*Type conversions*
+
+*What is the result of each expression?*
+
+**_int(1.55)_**
+
+  - **1**
+  
+**_float("7.99")_**
+
+  - **7.99**
+
+**_str(99)_**
+
+  - **'99'**
+
+----------------------
+
+![{59F96ACB-23B2-4514-A2A9-63D91B108102}](https://github.com/user-attachments/assets/9f9d5ae7-ccad-4636-9a97-03b2d783f9d0)
+
+---------------------
+
+## 4.9 Binary Numbers
+
+- A programmer usually thinks in terms of base ten numbers.
+
+- A computer must allocate some finite quantity of bits (e.g. 32 bits) for a variable, and that quantity of bits limits the range of numbers that the variable can represent.
+
+- Because each memory location is composed of bits (0s and 1s), a processor stores a number using base 2, known as a **binary number.**
+
+- For a number in the more familiar base 10, known as **decimal number**, each digit must be 0-9 and each digit's place is weighed  by increasing powers of 10.
+
+![{89524F98-B184-48B7-8563-23A66227FB8F}](https://github.com/user-attachments/assets/9d61b036-cfd1-4ec9-b72e-ae5de2bc8517)
+
+![{DC3CCD9C-6DFA-4E95-A88E-266E6C039839}](https://github.com/user-attachments/assets/8bf2241c-23d0-4617-af9a-24c6be896ec3)
+
+----------------------
+## 4.10 String Formatting
+
+- A **formatted string literal**, or **f-string**, allows a programmer to create a string with placeholder expressions that are evaluated as the program executes. 
+
+- An f-string starts with a *f* character before the starting quote, and uses curly braces { } to denote the placeholder expressions.
+
+- A placeholder expression is also called a **replacement field**, as its value replaces the expression in the final output.
+
+- 
 
 
 
