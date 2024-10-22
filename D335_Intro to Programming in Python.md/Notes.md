@@ -1399,7 +1399,8 @@ house_prices = ['$140,000', '$550,000','$480,000'] exists.*
 ![{DC3CCD9C-6DFA-4E95-A88E-266E6C039839}](https://github.com/user-attachments/assets/8bf2241c-23d0-4617-af9a-24c6be896ec3)
 
 ----------------------
-## 4.10 String Formatting
+## 4.10 String Formatting        
+###  ~EXTRA STUDY~
 
 - A **formatted string literal**, or **f-string**, allows a programmer to create a string with placeholder expressions that are evaluated as the program executes. 
 
@@ -1407,8 +1408,54 @@ house_prices = ['$140,000', '$550,000','$480,000'] exists.*
 
 - A placeholder expression is also called a **replacement field**, as its value replaces the expression in the final output.
 
-- 
+------------------------------
+*Idenify the output of f-strings.*
 
+*Select the option that correctly prints the given output.  Assume the following code is defined.*
+
+> num_items = 3
+>
+> cost_taco = 1.25
+
+**_I need 3 items please_**
+
+  - **print (f'I need {num_items} items please')**   *The f-string begins with an *f* character before the first quote.  The single replacemeent field, {num_items}, is evaluated when the program is run, and is assigned with the value 3.*
+
+**_3 tacos cost 3.75_**
+
+  - **print (f'{num_items} tacos cost {cost_taco * num_items}')**   *A replacement field can contain almost any expression, including multiplication of two variables to calculate the total cost.*
+
+-----------------------
+
+- An **=** sign can be provided after the expression in a replacement field to print both the expression and its result which is a useful debugging technique when dynamically generating lots of stings and output.
+
+    - Ex. f'{2 * 4 = }' produces the string "2 * 4 = 8".
+
+ - Double braces can be used to place an actually curly brace into an f-string.
+
+    - Ex. f'{{Jeff Bezos}} : Amazon' produces the string "{Jeff Bezos}: Amazon."
+  
+![image](https://github.com/user-attachments/assets/b4c51521-29da-44c6-92d0-1af02c468556)
+   
+-----------------
+
+![image](https://github.com/user-attachments/assets/ed359db2-4843-4336-97ae-11adeb10ab12)
+
+--------------------------------
+
+- A **format specification** inside a replacement field allows a value's formatting in the string to be customized.
+
+   - Ex. Using a format specification, a variable with the integer value 4 can be output as a floating-point number (4.0), with leading zeros (004) aligned to the left or right, etc.
+
+- A **presentation type** is a part of a format specification that determines how to represent a valuein text form, such as integer (4), floating point (4.0), fixed precision decimal (4.000), percentage (4%), binary (100), etc.
+
+- A presentation type can be set in a replacement field by inserting a colon (:) and providing one of the presentation type characters decribed below.
+
+![image](https://github.com/user-attachments/assets/94dd3095-d57c-4100-8498-794904e2fe9c)
+
+![image](https://github.com/user-attachments/assets/300eba38-5f5f-4398-b034-d8218e8077a7)
+
+--------
 
 
 
