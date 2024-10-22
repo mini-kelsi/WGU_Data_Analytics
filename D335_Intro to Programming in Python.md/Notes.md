@@ -1456,6 +1456,16 @@ house_prices = ['$140,000', '$550,000','$480,000'] exists.*
 ![image](https://github.com/user-attachments/assets/300eba38-5f5f-4398-b034-d8218e8077a7)
 
 --------
+## 5.1 If-Else Branches (General)
 
+- A **branch** is a sequence of statements only executed under a cetain condition.
+
+   - Ex. A hotel may discount a price only for people over age 65.
+
+- An **if** branch is a branch taken only IF an expression is true.
+
+- An **if-else** banch has two branches: the first branch is executed IF an expression is true, ELSE the other branch is executed.
+
+- 
 
 
