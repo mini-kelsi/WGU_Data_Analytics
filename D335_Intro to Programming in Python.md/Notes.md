@@ -1466,6 +1466,136 @@ house_prices = ['$140,000', '$550,000','$480,000'] exists.*
 
 - An **if-else** banch has two branches: the first branch is executed IF an expression is true, ELSE the other branch is executed.
 
-- 
+- Commonly a programmer wishes to take one of multiple (three or morre) branches. An if-else can be extended to an if-elseif-else structure.
+
+- The **equality operator (==)** evaluates to true if the left and right sides are equal.
+
+-----
+
+![image](https://github.com/user-attachments/assets/8f5ab99f-1913-4684-93ce-23499db9c305)
+
+--------
+
+- The **inequality operator (!=)** evaluates to true if the left and right sides are not equal or different.
+
+- **Boolean** is a type that has just two values: *true or false*
+
+-------
+
+![image](https://github.com/user-attachments/assets/6273d5d1-e9da-41ab-b19a-b7168689ad50)
+
+--------
+
+- A common programming task is to detect if value lies within a certain range and then perform an action depending on where the value lies.
+
+- An if-elseif-else structure can detect number ranges with each branch performing a different action for each range.
+
+-------
+
+![image](https://github.com/user-attachments/assets/8cb4e215-e738-4ef8-9567-658785420868)
+
+-------
+
+- **Relational operators** checks how one operand's value relates to another, like being greater than.
+
+--------
+## 5.5 Detecting Ranges Using Logical Operators
+
+- A **logical operator** treats operands as being True or False, and evaluates to True or False.
+
+- Logical operators include AND, OR  and NOT.
+
+- A programmer often uses logical operators ot detect a range by explicityly specifying the high-end and low-end of the range.
+  
+   - If a program should detect increasing ranges without gaps, a multi-branch if-else statement can be used without logical operators; the low-end of the range is implicitly known upon reaching an expression.
+ 
+-----
+## 5.6 Detecting Ranges with Gaps
+
+- Often ranges catain gaps.
+
+- Programmers often use logical operators to explicitly detect ranges with an upper and lower bound, including ranges with gaps that man have intermediate bounds.
+
+     - The ranges can be combined into a single branch using the logical OR operator.
+
+ -------
+ ## 5.7 Detecting Multiple Features with Branches
+
+ - Sometimes the programmer has multiple if statements in dequence, which looks similar to a multi-branch if-else statement but has a very different meaning.  Each if statement is independent, and thus more than one branch can execute, in contrast to the multi-branch if-else arrangement.
+
+ - A branche's statements can include any valid statements, including another if-else statement, which are known as **nested if-else** statements.
+
+-----
+## 5.8 Comparing Data Types and Common Errors
+
+- The relational and equality operators work for integer, string, and floating-poin built-in types.
+
+- Floating-point types should not be compared using the equality operators, due to the imprecise representation of floating-point numbers.
+
+- The operators can also be used for the string type.  Strings are equal if they have the same number of characters and corresponding characters are identical.
+
+- The types of the values being compared determines the meaning of a comparsion. If both values are numbers, then the numbers are compared arithmetically (5 < 2 is False). Comparisons that make no sense, such as 1 < 'abc' result in a TypeError.
+
+- Comparison of values witht he same type, such as 5 < 2, or 'abc' >= 'ABCDEF', depends on the types being compared
+
+    - Numbers are **arithmetically** compared.
+ 
+    - Strings are compared by **converting** each character to a number value (ASCII or Unicode), and then comparing each character in order. Most string comparisons use equality operators '==' or '!=', as in today == 'Friday'.
+ 
+    - Lists and tupes are compared via an operator to evaluate to True. Relational operators like < or > can also be used: The result is determined by the first mismatching elements in the sequences.
+ 
+    - Dictionaries are compared only with == and !=. To be equal, two dictionaries must have the same set of keys and the same corresponding value for each key.
+ 
+- A **common error** is to use = rather than == in an if-else expression.
+
+---------
+## 5.9 Membership and Identity Operators
+
+- The **in** and **not in** operators, known as **membership operators**, yield True or False if the left operand matches the value of some element in the right operand, which is always a container.
+
+- Membership operators can be used to check whether a string is a **substring**, or matching subset of characters, of a larger string.
+
+- Membership in a dictionary implies that a spcific *key* exists in the dictionary. *A common error is to assume that a membership operator checks the values of each dictionary key as well.*
+
+- A programmer can use the **identity operator, is**, to check whether two operands are bound to a single object.
+
+- The inverse identity operator, **is not**, gives the negated value of 'is'.
+
+------
+## 5.10 Order of Evaluation
+
+- The order in which operators are evaluated in an expression is known as **precedence rules.**
+
+------------
+
+![image](https://github.com/user-attachments/assets/74b24614-7770-42bc-ac0a-8d97fa081108)
+
+----------
+
+- A *Common error* is to write an expression that is evaluated in a different order than expected.  Good practice is to use parentheses in expressions to make the intended order of evaluation explicit.
+
+-------
+## 5.11 Code Blocks and Identation
+
+- A **code block** is a series of statements that are grouped together.
+
+- A code block in Python is defined by its indentation leve, i.e., the number of blank columns from the left edge.
+
+    - The inital code block is not indented.
+ 
+    - A new code block can follow a statement that ends with a colon, such as an 'if' or 'else'.
+      
+    - A new code block must be more indented than the previous code block.
+ 
+  - The amount of indentation used to indicate a new code block can be arbitrary, as long as the programmer uses the same indentation consistently for4 each line in the block. *Good practice is to use the standard recommended 4 columns per indentation level.*
+ 
+  - *A common error for new Python users is the mixing of tabs and spaces.*
+ 
+  ------
+  ## 5.12 Conditial Expressions
+
+  - A **conditional expression** has the following form:  expr_when_true if condition else expr_when_false
+ 
+  - 
 
 
