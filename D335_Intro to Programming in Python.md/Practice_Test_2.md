@@ -482,6 +482,8 @@ then the expected output is
 >
 > cat chases dog
 
+![{5D60DEDA-A8B3-46A5-A797-1E806BA6FEDB}](https://github.com/user-attachments/assets/97ef07d2-407d-47a6-822a-f9a1e38732cd)
+
 ----------------------------
 
 # 34.13 PRACTICE: Manipulate CSV Files
@@ -522,6 +524,7 @@ then the expected output is
 >
 > {'celery': '2.81', 'milk': '4.34', 'bread': '5.63'}
 
+![{4D665E3B-B7D2-47FF-8E42-4D5CBF11ED74}](https://github.com/user-attachments/assets/9d673b8b-b247-4725-8d1b-569e271c19b9)
 
 -----------------------------------
 
@@ -563,6 +566,7 @@ thenthe expected output is
 >
 > False
 
+![{F2DD92AE-E268-4693-88BF-D26E861E5BFC}](https://github.com/user-attachments/assets/800db191-80d9-4e65-b31f-6223fd120842)
 
 -----------------------
 
@@ -590,5 +594,6 @@ then the expected output is
 
 > 8 is 40 in human years
 
+![{9A40E727-A7FC-47A0-A1CB-03579A88F6F5}](https://github.com/user-attachments/assets/a3b36070-9534-41b6-84b1-ba4978d40f3f)
 
 ------------------------
