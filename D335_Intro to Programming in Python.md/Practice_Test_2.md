@@ -104,6 +104,7 @@ then the expected output is
 
 > Element 4: tuple
 
+![{F89DA6AA-8B7C-4D85-AC3E-AE7BF987B07B}](https://github.com/user-attachments/assets/1f8eceeb-6116-45be-8c9f-28ce1478520d)
 
 ----------------
 
@@ -150,6 +151,7 @@ then the expected output is
 
 > Trapezoid area: 28.0 square meters
 
+![{6EBFF413-72F5-461F-9E80-27A3CC1C3D74}](https://github.com/user-attachments/assets/d9383b71-e013-4a92-a80d-c8b70a700a5c)
 
 ---------------------
 
@@ -197,6 +199,9 @@ Then the expected output is
 >
 > String: 13627
 
+![{744D7459-D06E-436E-A784-CF88B0D5004E}](https://github.com/user-attachments/assets/7400e8ab-9106-4b3c-bb95-969cac055dc6)
+
+![{4AB2973F-3C7E-46EA-B160-102DA62ABFB7}](https://github.com/user-attachments/assets/f299d83c-9593-4465-9bfe-fe36c330ce23)
 
 ----------------------
 
@@ -224,6 +229,7 @@ then the expected output is
 
 > 154-17-5430
 
+![{E3E0CA23-4D8F-410F-8559-75D7920C5FE1}](https://github.com/user-attachments/assets/18a16a7a-ee77-4f7e-a086-d032a454460c)
 
 ----------------
 
@@ -255,6 +261,9 @@ then the expected output is
 
 > Greater Than Max? False
 
+![{38BE24CA-CA63-4970-918E-AD230DABA7E5}](https://github.com/user-attachments/assets/e1c10b22-f037-4085-9c12-fa35b9fe4198)
+
+![{F43EB6F1-D05F-45EE-A18B-09EAC4D5CFAE}](https://github.com/user-attachments/assets/89806865-0bb1-4f70-b8ac-aae88f1cdade)
 
 --------------
 
@@ -294,6 +303,9 @@ then the expected output is
 
 > Error
 
+![{47805BE1-BBC3-414D-AD2A-D7D53122FB51}](https://github.com/user-attachments/assets/5d7d73df-85c6-4fe1-b890-48393d78c482)
+
+![{352090A6-57D7-44D6-9B5F-71253D5E6EB7}](https://github.com/user-attachments/assets/88a14608-700b-42d9-b8be-385b485e4e05)
 
 ------------------------
 
@@ -344,6 +356,7 @@ then the expectedn output is
 >
 > Watch out for ice!
 
+![{34559FDA-9EBE-4BAD-8D5A-035BD8BBFA46}](https://github.com/user-attachments/assets/5796979d-4847-4428-be92-7bb37c7b22b0)
 
 -------------------
 
