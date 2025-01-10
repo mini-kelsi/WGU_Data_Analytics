@@ -1596,6 +1596,101 @@ house_prices = ['$140,000', '$550,000','$480,000'] exists.*
 
   - A **conditional expression** has the following form:  expr_when_true if condition else expr_when_false
  
-  - 
+----------------
+
+## 7.1 User-Defined Function Basics
+
+- A program may perform the same operation repeatedly, causing a large and confusing program due to redundancy. Program redundancy can be reduced by creating a grouping of predefined statements for repeatedly used operations, known as **_function_**.
+
+- A **function** is named series of statements.
+
+  - A **function definition** consists of the function's name and a block of statements
+ 
+  - A **function call** is an invocation of the function's name, causing the function's statements to execute.
+
+- Python comes with a number of built-in functions, such as input(), int(), etc.
+
+- The **def** keyword is used to create new functions.
+
+- *Good practice* is to follow the convention of naming functions with lowercase letters and underscores, such as get_name or calc_area.
+
+- A function may return one value using a **return statement**.
+
+- A function can only return *one item*, not two or more( thought a list or a tuple with multiple elements could be returned).
+
+- A function with *no return* statement, or a return statement with *no following* expression, returns the value **None**.
+
+- **None** is a special keyword that indicates no value.
+
+- A return statement may appear at *any* point in function, not just as the last statement.
+
+- A programmer can influence a function's behavior via an input:
+
+   - A **parameter** is a functino input specified in a function definition.
+ 
+   - An **argument** is a value provided to a function's parameter during a function call.
+ 
+- A parameter is like a variable definition. fUnpon entering the function, the parameter is bound to the argument object provided by the call, created a shared reference to the object.
+
+- An argument may be an expression, like 12.0, x, or x * 1.5.
 
 
+![{9D421687-961E-40FE-BA89-538AEB2BDFA4}](https://github.com/user-attachments/assets/24500e4d-51a1-41c4-8738-1d4527f6abbc)
+
+- A function may have multiple parameters, which are separated by commas. Parameters are assigned with argument values: First parameter with the first argument, second with the second, etc.
+
+- A function definition with  no parameters must still have the parentheses, as in: def calc_something():.  The call to such a function must include parentheses, and they must be empty, as in: calc_something()
+
+
+![{A0490FD9-D1AC-4345-812A-192081F82FC2}](https://github.com/user-attachments/assets/334d6cd7-f0ba-4ea7-a456-3ca4af6d9e8e)
+
+- A function's statements may include function calls, known as **hierarchial function calls**, or **nested function calls**.
+
+- Code such as user_input = int(input()) consists of such a hierarchical function call, wherin the input() function is called and evaluates to a value that is then passed as an argument to the int() function.
+
+
+![{7490FB0F-22AD-4BF1-977D-43EA2C328B29}](https://github.com/user-attachments/assets/6dab5c17-e916-4a39-bdb2-b3098b3695e2)
+
+----------------
+
+## 7.2 Print Functions
+
+- A common operation is for a fuinction is to print text.
+
+- A function with no return statement is called a **void function** and such a function returns the value *None*.
+
+![{80FEF968-6408-4FE1-987E-F9F0EA4613A3}](https://github.com/user-attachments/assets/375a6043-bed1-4308-a40e-84e33f4e8682)
+
+*A function that produces output can also return a value, but this material separates these operations for clarity. A function that both outputs and returns a value is not void.*
+
+
+![{FBF046BD-779C-42A5-A761-15FE88E0B1B3}](https://github.com/user-attachments/assets/eac33954-e1e4-40b5-8a08-bf165ceea1f7)
+
+------------------------
+
+## 7.3 Dynamic Typing
+
+- A programmer can pass any type of object as an argument to a function.  Consider a function add(x,y) that adds two parameters:
+
+   - A programmer can call the add() function using two integer arguments, as in add(5,7), which returns a value of 12. Alternatively, a programmer can pass in two string arguments, as in add('Tora', 'Bora'), which would concatenate the two strings and return 'ToraBora'.
+
+- The function's behavior of adding together different types is a concept called **polymorphism**
+
+  -  **Ploymorphism** is an inherent part of the Python language.  EX. consider the multipllication operator *. If the two operands are numbers, then the result is the produc of those two numbers.  IF one operand is a string and the other an integer (e.g., 'x' * 5), then the result is a repetition of the string five times: 'xxxxx'.
+ 
+- Python uses **dynamic typing** to determine the type of objects as a program executes.  EX. the consecutive statements num = 5 and num = '7' first assign with an integer type and then a string rtype.  Then type of num can chagne depending on the value it references.  The interpreter is responsible for checking that all operations are valid as the program executes. If the functions call add(5, '100') is evaluated, an error is generated when adding the string to an integer.
+
+- In contrast to dynamic typing, many other languages like C, C++, and Java use **static typing**, whihc requires the programmer to define the type of every variable and every function parameter in a program's source code.
+
+   - Dynamic typing typically allows for more flexibility of the code that a programmer can write, but at the expense of potentially introduncing more bugs, since there is no compilation process by which types can be checked.
+
+![{AC0DBB1B-2251-420C-BCF8-31B849F3D55E}](https://github.com/user-attachments/assets/c85413be-85b8-4615-8de5-6544913f5275)
+
+
+![{2A9D937A-BC6D-4C63-82F9-A79C5D7C403F}](https://github.com/user-attachments/assets/e2433580-bbde-426e-9dd0-787d732080b8)
+
+-----------------------
+
+## 7.4 Reasons for Defining Functions
+
+**Decomposing a program into functions can greatly aid program readability, helping yield an initally correct program, 
