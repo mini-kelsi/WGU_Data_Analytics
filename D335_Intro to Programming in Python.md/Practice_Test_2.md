@@ -269,6 +269,8 @@ then the expected output is
 
 # 34.8 PRACTICE: Try Block with Exception Error
 
+## Study More
+
 ### Instructions:
 
 Create a Python solution to the following task.  Ensure that the solution produces output in exactly the same format shown in the sample(s) below, including capitalization and whitespace.
@@ -362,6 +364,7 @@ then the expectedn output is
 
 # 34.10 PRACTICE: Dictionary Key Search
 
+## Study More
 ### Instrustions:
 
 Create a Python solution to the following task.  Ensure that the solution produces output in exactly the same format shown in the sample(s) below, including capitalization and whitespace.
