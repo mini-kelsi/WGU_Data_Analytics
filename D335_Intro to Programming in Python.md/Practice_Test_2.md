@@ -397,18 +397,8 @@ then the expected output is
 
 > Total price: $150.53
 
-SOLUTION:
+![image](https://github.com/user-attachments/assets/89ed1d2b-366c-4760-8fa1-318220ee18cb)
 
-num_stocks = int(input())
-total_cost = 0.0
-
-for i in range(num_stocks):
-  stock_selection = input()
-
-if stock_selection in stocks.keys():
-  total_cost += stocks[stock_selection]
-
-print(f'Total price: ${total_cost:.2f}')
 
 -------------------
 
@@ -458,24 +448,8 @@ then the expected output is
 
 > cookies $ 585.79
 
-SOLUTION:
+![image](https://github.com/user-attachments/assets/4f2a837f-923f-4432-bc98-69d177ca97dc)
 
-store_item = input()
-num_items = int(input())
-total_cost = purchase[store_item] * num_items
-
-if num_items < 10:
-  print(store_item, f"${total_cost:.2f}")
-
-if num_items in range(10,21):
-  discount = total_cost * 0.05
-  total_cost = total_cost - discount
-  print(store_item, f"${total_cost:.2f}")
-
-if num_items >= 21:
-  discount = total_cost * 0.10
-  total_cost = total_cost - discount
-  print(store_item, f"${total_cost:.2f}")
   
 
 ----------------
