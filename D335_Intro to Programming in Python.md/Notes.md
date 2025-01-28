@@ -1693,4 +1693,51 @@ house_prices = ['$140,000', '$550,000','$480,000'] exists.*
 
 ## 7.4 Reasons for Defining Functions
 
-**Decomposing a program into functions can greatly aid program readability, helping yield an initally correct program, 
+**Decomposing a program into functions can greatly aid program readability, helping yield an initally correct program, helping yield an initially correct program program, and easing future maintenance.** 
+
+- Programmers commonly use functions to write programs *modularly*.
+  
+- **Modular development** is the process of dividing a program into separate modules that can be developed and tested separately and then itegrated into a single program.
+
+- A function can be *defined once*, then called from multiple places in a program, thus avoiding redundant code.
+
+- Each function should have easily-recognizable behavior, and the behavior of the main program *and any function that calls other functions( should be easily understandable via the sequence of function calls.
+
+- A *general guideline* is that a function's definition usually shouldn't have more than about 30 lines of code, although his guideline is not a strict rule.
+
+--------
+
+![image](https://github.com/user-attachments/assets/061547a3-0617-4651-81a1-b75fefb1a219)
+
+--------------------
+
+![image](https://github.com/user-attachments/assets/9f7abcb1-1472-4573-843f-78233249e0c0)
+
+----------
+
+## 7.5 Writing Matematical Functions
+
+- A function is commonly defined to compute a mathematical calculation involving several numerical parameters and returning a numerical result.
+
+----------
+
+![image](https://github.com/user-attachments/assets/4785612d-48fb-4df2-93c0-1b589f2013d7)
+
+![image](https://github.com/user-attachments/assets/28a00084-969a-49eb-ac6a-fd0336e9e799)
+
+-------------
+
+![image](https://github.com/user-attachments/assets/91f4d89f-7965-481d-b4f5-9fc199b7132b)
+
+------------
+
+## 7.6 Function Stubs
+
+- Programs are typically written using **incremental development**, meaning a small amount of code is written and tested, then a small amount more (an incremental amount) is written and tested, and so on.
+
+- To assist with the incremental development process, programmers commonly introduce **function stubs**, which are function definitions whose statements haven't been written yet.
+
+- The benefit of a function stub is that the high-level behavior of the program can be captured before diving into details of each function, akin to planning the route of a road trip before starting to drive.
+
+- Capturing high-level behavior first may 
+
