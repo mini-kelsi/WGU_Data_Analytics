@@ -85,5 +85,49 @@ An HTTP request and an HTTP response are both composed of four parts:
 
   - Optional message body - A **message body** contains data being transferred between a web browser and web server.  In a request, the message body may be empty or contain submitted form data. In a response, the message body may contain the requested resource.
 
+------------------
+## 1.4 Web Trends
 
+- Web technology is changing so fast, that predicting how web tools and behaviors will have changed, even a few years from now, is very challenging.
+
+      - However, some significant trends exist and are important for web developers to consider.
+
+![{D0DFE772-2F0E-45C8-BBEC-4C9F577DF006}](https://github.com/user-attachments/assets/2b1031dc-68f5-4ca6-86ef-7e229822e58d)
+
+---------
+
+![{6676F137-38CE-40FD-9E49-72859AF9EEEB}](https://github.com/user-attachments/assets/8bb599de-ed61-466a-abe4-8f254ffe5eb8)
+
+
+- A **mobile device** is a handheld computer, like a smartphone or tablet.
+
+    - Used to acces the web today more often than desktop computers.
+    - Web developers need to design applications that work equally well on desktop and mobile devices.
+ 
+![{6CA4B658-85D3-4807-825C-258275B75A4B}](https://github.com/user-attachments/assets/758882ff-78e3-462f-b802-f3913600ccd5)
+
+------------
+
+![{0BF568F2-21C2-4100-B5B2-A2A3999E8045}](https://github.com/user-attachments/assets/75ff6333-cb09-4342-af7d-cee313455142)
+
+- **Internet of Things**(**IoT**) is the global collection of comunicating devices that sense and control technoloty on behalf of humans.
+
+    - IoT devices range from a simple temperature sensor to a satellite-based laser scanner used to discover archaeological sites hidden by vegetation.
+ 
+![{50FDA54C-E368-45E0-BF23-9F22E25541E9}](https://github.com/user-attachments/assets/b284c43c-1758-4f82-a5e7-ddb7dd1009c9)
+
+*People do **not** typically interact directly with IoT devices. Usually accessed using custom apps or webpages.*
+
+-----------
+
+### 1.4.3: Internet of Things
+
+*Which statements are likely true about an IoT-based system used to monitor a swimming pool for a pool service company?*
+
+1. A technician installs devices that measure and report water chemical concentrations, water level, pump status, and water flow through the filter systm.
+2. The pool control system periodically transmits summary data over the internet to a pool service company's web server.
+3. The pool company would have to send a technician to the pool to change the control system settings.
+4. The pool company will not know that the water level is too low unless the customer calls or someone happens to check the system status webpage.
+5. If the customer notices the low water level and calls, the company receptionist's browser can have the customer's pool status webpage loaded by the time the receptionist answers the phone.
+6. After the customer reports the water level, 
 
