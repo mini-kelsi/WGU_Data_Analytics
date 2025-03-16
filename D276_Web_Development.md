@@ -125,9 +125,89 @@ An HTTP request and an HTTP response are both composed of four parts:
 *Which statements are likely true about an IoT-based system used to monitor a swimming pool for a pool service company?*
 
 1. A technician installs devices that measure and report water chemical concentrations, water level, pump status, and water flow through the filter systm.
+   - True
 2. The pool control system periodically transmits summary data over the internet to a pool service company's web server.
+   - True
 3. The pool company would have to send a technician to the pool to change the control system settings.
+   - False
 4. The pool company will not know that the water level is too low unless the customer calls or someone happens to check the system status webpage.
+   - False
 5. If the customer notices the low water level and calls, the company receptionist's browser can have the customer's pool status webpage loaded by the time the receptionist answers the phone.
-6. After the customer reports the water level, 
+   - True
+6. After the customer reports the water level, the receptionist could inform the caler that a service technician was already dispatched and was six minutes from arriving at the house.
+    - True
 
+------------------
+
+- **Web accessibility** is the ability of users with disabilities to access and use a webpage with reasonable effort.
+
+- Some conditions affecting web accessibility include:
+   - Visual probelms like blindness, low vision, or color blindness
+   - Hand control issues ranging fromt tremors to total inability to use hands
+   - Seizures caused by flashing on the screen
+   - Cognitive challenges like dyslexia and other difficulties in processing webpages
+
+![{EC4DF624-FDB9-4B45-A68E-F314A5A74526}](https://github.com/user-attachments/assets/cd378f3a-aad0-461b-9717-5d973226cdbe)
+
+----------------------
+### 1.4.4: Accessibility Fact Check    
+
+1. Really small businesses are exempt from web accessibiilty requirements.
+   - False
+2. Color blindness is so rare that web developers do not have to consider the issue when selecting colors for a webpage.
+   - False
+3. A random website is more likely to have a visitor with low vision than a visitor who is totally blind.
+   - True
+4. Unlike the blind, people who are deaf do not need special accommodation for websites.
+   - False
+
+------------
+
+- **Cognitie computing** is the use of artificial intelligence techniques and access to vast amounts of data to simulate human problem solving in complex situations with ambiguity, changing data, and even conflicting information.
+
+    - IBM Watson is the symbol of this trend to create intelligent software systems that process massive numbers of webpages in order to extract information and address challenging problems in areas such as medical treatment, increasing retail sales, and improving the quality of call center help.
+
+    - Intelligent systems like Watson are aided by effective use of webpage HTML metadata and structure markeup
+ 
+- **Separation of concerns** is the design principle of breaking up web content using distinct languages and documents that overlap as little as possible.  In modern web design, document structure and text, visual layout, and page interation are separately specified using three key languages.
+
+    - HTML is the language that describes the page content.
+    - CSS is the language that describes page layout.
+    - JavaScript is the language that provides interactive functionality.
+
+- When webpages are built so as to cleanly separate document structure, visual layout, and interaction, the following results are obtained:
+
+    - Webpages are more likely to work as inteded across a wide range of browsers.
+    - Webpages work better on smartphones and other mobile devices.
+    - Internet of Things systems are easier to build because relevant data is easier to identify.
+    - Web accessibility is improved.
+    - Intelligent systems can extract more meaning from the content of webpages.
+
+--------------------------
+### 1.4.5 Review trends in web technology
+
+1. Which browser lost the most market share between 2010 and 2019?
+   - IE(Internet Explorer)  *Internet Explorer dropped from about 50% in 2010 to less than 10% in 2019*
+2. In what year did web browsing first become more likely on mobile rather than desktop?
+   - 2017 *According to StatCounter, mobile browsing surpassed desktop browsing for the first time in 2017*
+3. Are human doctors or IBM's Watson more likely to keep up with new medical information in the future?
+   - IBM's Watson
+
+--------------------------
+## 1.5 Introduction to HTML
+
+- HTML, CSS, and JavaScript are used together to create a webpage.
+
+- **HTML** (HyperText Markup Language) is a textual language for creating webpages.
+
+- An **element** is a single HTML structure that is represented with HTML tags.
+
+- A **tag** has a descriptive name surrounded by < and > characters that the web browser uses to display content.
+
+![{D5C4FA8B-0355-41E1-AA56-E2A9182F1B23}](https://github.com/user-attachments/assets/0452f740-2994-4f94-9729-d44f3f6e3e0a)
+
+----------------
+
+![{F071D9B5-6D49-4D4B-84C7-63A20ED874F1}](https://github.com/user-attachments/assets/93c106ad-fc84-4e28-ba83-849fb8cdf9b1)
+
+---------------------------------
