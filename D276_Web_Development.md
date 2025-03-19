@@ -221,3 +221,29 @@ An HTTP request and an HTTP response are both composed of four parts:
 ![{A6F448C7-F85B-4030-862A-469B2DFA09FA}](https://github.com/user-attachments/assets/fd483569-2876-4197-bddc-03d41f604fce)
 
 ![{EDA4CC52-7527-49D8-87D8-75F610C54078}](https://github.com/user-attachments/assets/c3521ecb-2e13-49ad-8d24-9b2774766f76)
+
+-----------------------------
+## 1.6 Introduction to CSS
+
+- **Cascading Style Sheets (CSS)** is a textual language for describing how a webpage is style for visual presentation.
+
+- CSS controls the look *and* layout of webpage content.
+
+- A webpage without any styling will use the brower's default styling with white background and black, standard-sized text.
+
+- A **CSS rule** specifies styling properties for specific HTML elements.
+
+- CSS rules may be placed within a <style> element in the HTML file's head part.
+
+![{215F77A0-4FD6-48A7-A9C1-81CFF832E056}](https://github.com/user-attachments/assets/d1662187-a3aa-43f0-a3c3-656cb8863319)
+
+![{31C2A890-C74B-4D5F-AA16-DEAF60CB0CBA}](https://github.com/user-attachments/assets/1cfa5a76-9b5d-480c-b8a0-829ceece0686)
+
+- A **CSS color** can be a pre-defined name like blue, or an rgb value like rgb(50, 100, 255).
+
+- **rgb** is short for red, green, blue; all colors can be formed by combining those three colors.  Values range from 0(none) to 255(bright).
+
+![{8D4E8487-7DA9-4E9B-A1AA-B79B96AFFF38}](https://github.com/user-attachments/assets/b266c677-6d3d-4aef-9317-b24e8fec8d00)
+
+
+
