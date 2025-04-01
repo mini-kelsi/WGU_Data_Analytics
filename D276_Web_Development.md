@@ -245,5 +245,70 @@ An HTTP request and an HTTP response are both composed of four parts:
 
 ![{8D4E8487-7DA9-4E9B-A1AA-B79B96AFFF38}](https://github.com/user-attachments/assets/b266c677-6d3d-4aef-9317-b24e8fec8d00)
 
+---------------------------------
+## 1.7 Introduction to JavaScript
 
+- **JavaScript** is a programming language that runs in a browser, enabling webpages supporting actions like responding to a button click.
+
+  - JavaScript code is placed in a *<script>* element, which can be inlcuded in the HTML file's head or body parts.
+
+- A **variable** stores a value or a reference to a webpage element.
+
+- A JavaScript **function** is a named group of statements that can be executed by referring to that name.
+
+----------------------------------
+
+![{3285F728-C235-47BD-A46B-D0F6B5A47BA4}](https://github.com/user-attachments/assets/a78c8821-d598-4de8-bfe9-38133b2d2736)
+
+----------------------------------
+
+### 1.7.3 JavaScript for updating user ratings
+
+*Refer tot he JavaScript example above*
+
+1.) What is the id of the span containing the third rating star?
+
+**rating3**
+
+*Each rating star's span has a unique id. rating1 for the first star, rating2 for the second, rating3 for third, and so on.*
+
+2.) If the user clicks the "Rate 4" button, to what color is the fourth rating star set?
+
+**blue**
+
+*If the rating is 4, the first four rating starts will be blue, and the fifth star is set to light gray.*
+
+-------------------------------------
+
+## 1.7.4 JavaScript clock example
+
+*Refer to the clock example above*
+
+1.) The clock does not change unless a button is clicked.
+
+**False**
+
+*The clock changes tot he current time if the "Draw current time" button is clicked, but the clock also changes when a different minute or hour is typed.*
+
+2.) In what file does the JavaScript code appear?
+
+**clock.js**
+
+*The clock.html file contains a *<script>* element with the attribute *src="clock.js"*, which causes the browser to load the JavaScript code from clock.js. Many webpages use separate .js files to store the webpage's JavaScript code.*
+
+3.) The JavaScript draws the clock inside what element?
+
+**<canvas>**
+
+*A *<canvas>* element creates a rectangular area within a webpage where JavaScript can draw lines, shapes, and text.*
+------------------------------
+## 1.9 Getting started with R
+
+- **R** is in some sense a re-implementation of S with added lexical scoping semantics.
+
+      - Usually, code written in S will also run in R.
+
+- R is a modern language with a rather short history.
+
+- 
 
