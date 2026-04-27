@@ -1,335 +1,437 @@
- 
+ # Call#1
 
-##Call#1
-
-Section 1 Lesson 1
+## Section 1 Lesson 1
 
  
 
-Network devices:
+### Network devices:
 
  
 
-WAP
+**WAP**
+  - Wireless Access Point
+  -  Device used to connect devices to a newtwork by wireless means
 
-Router
+**Router**
+  -
 
-Switch
+ **Switch**
+   -
 
-Hub
+**Hub**
+  -
+  
 
- 
 
-Topologies:
-
- 
-
-Star
-
-Ring
-
-Bus
-
-Mesh
+### Topologies:
 
  
 
-Network Types:
+**Star**
+  - network where devices are all connected to a centeral point
+
+**Ring**
+  -
+
+**Bus**
+  -
+
+**Mesh**
+  -
 
  
 
-LAN
-
-MAN
-
-CAN
-
-WLAN
-
-WAN
+### Network Types:
 
  
 
-Cables
+**LAN**
+  - local area network
+  - could be a building, house or room that connects mulitple computer and devices together
 
-Coaxial Cable
+**MAN**
+  - Metropolitan Area Network
+  - may connect several different LANs together that may 
 
-Cat 5
+**CAN**
+  - campus area network
+  - mutliple buildings connected to a network.
 
-Cat 5e
+**WLAN**
+  - Wireless Local Area Network
+  - the wireless portioin of the LAN
+  - provides wireless network connectivity to mobile devices
 
-Cat 6
-
-Cat 6A
-
-Single Mode Fiber
-
-Multi Mode Fiber
+**WAN**
+  -
 
  
 
-Complete Network device worksheet
+### Cables
+
+**Coaxial Cable**
+  -
+
+**Cat 5**
+  -
+
+**Cat 5e**
+  -
+
+**Cat 6**
+  -
+
+**Cat 6A**
+  -
+
+**Single Mode Fiber**
+  -
+
+**Multi Mode Fiber**
+  -
+
+ 
 
 ---------------------------------------
 
  
 
-Call#2
+# Call#2
 
-OSI Model
-
- 
-
-List and describe what happens at each layer of the OSI model, the network devices at each layer and protocols at those layers.
+## OSI Model
 
  
 
-Complete OSI model worksheet
+# List and describe what happens at each layer of the OSI model, the network devices at each layer and protocols at those layers.
+
+
+ **Application**
+   -
+
+ **Session**
+   -
+
+ **Application**
+   -
+
+ **Transport**
+   -
+
+ **Network Layer**
+   -
+
+ **Data Link**
+   -
+
+ **Physical Layer**
+   -
+ 
+
+# Network Commands
 
  
 
-Network Commands
+# Describe the network commands:
 
  
 
-Describe the network commands:
+**Ping**
+  -
 
- 
+**Traceroute**
+  -
 
-Ping
+**Tracert**
+  
 
-Traceroute
+**Netstat**
+  -
 
-Tracert
+**Nslookup**
+  -
 
-Netstat
+**Dig**
+  -
 
-Nslookup
+**Ipconfig**
+  -
 
-Dig
+**Ifconfig**
+  -
 
-Ipconfig
+**Telnet**
+  -
 
-Ifconfig
-
-Telnet
-
-SSH
-
- 
-
-Complete Network Commands Worksheet
+**SSH**
+  -
 
  
 
 ------------
 
-Call#3
+# Call#3
 
-Section 1 Lesson 4
-
- 
-
-Cloud Service Models:
+## Section 1 Lesson 4
 
  
 
-IaaS
-
-PaaS
-
-SaaS
+### Cloud Service Models:
 
  
 
-Cloud deployment models:
+**IaaS**
+  -
+
+**PaaS**
+  -
+
+**SaaS**
+  -
 
  
 
-Private cloud
-
-Public cloud
-
-Hybrid cloud
-
-Multi cloud
-
-Community cloud
-
-Types of Hypervisor
+### Cloud deployment models:
 
  
+**Private cloud**
+  -
 
-Type 1
+**Public cloud**
+  -
 
-Type 2
+**Hybrid cloud**
+  -
+
+**Multi cloud**
+  -
+
+**Community cloud**
+  -
+
+
+### Types of Hypervisor 
+
+**Type 1**
+  -
+
+**Type 2**
+  -
 
  
-
-Complete Cloud worksheet
-
 --------
 
-Call#4
+# Call#4
 
  
 
-Section 2
+## Section 2
 
  
 
-Teach Back Topics:
+### Teach Back Topics:
 
-CIA
+**CIA**
+  -
 
-White hat
+**White hat**
+  -
 
-Black hat
+**Black hat**
+  -
 
-Grey hat
+**Grey hat**
+  -
 
-Blue team
+**Blue team**
+  -
 
-Red team
+**Red team**
+  -
 
-White team
+**White team**
+  -
 
-Purple team
+**Purple team**
+  -
 
-Zero day
+**Zero day**
+  -
 
-Script kiddie
+**Script kiddie**
+  -
 
-Man in the middle attack
+**Man in the middle attack**
+  -
 
-Phishing
+**Phishing**
+  -
 
-Vulnerability
+**Vulnerability**
+  -
 
-Exploit
+**Exploit**
+  -
 
-Social Engineering
-
- 
-
-Complete CIA model worksheet
-
+**Social Engineering**
+  -
  
 
 --------------
 
-Call#5
+# Call#5
 
  
 
-Section 3 Lesson 1
+## Section 3 Lesson 1
 
  
 
-Data retention policy
+**Data retention policy**
+  -
 
-AUP (Acceptable use policy)
+**AUP (Acceptable use policy)**
+  -
 
-BYOD policy
+**BYOD policy**
+  -
 
-Least Privilege
+**Least Privilege**
+  -
 
-Fails Safe default
+**Fails Safe default**
+  -
 
-Economy of Mechanism
+**Economy of Mechanism**
+  -
 
-Complete Mediation
+**Complete Mediation**
+  -
 
-Open Design
+**Open Design**
+  -
 
-Separation of Privilege/Duties
+**Separation of Privilege/Duties**
+  -
 
-Least Common Mechanism
+**Least Common Mechanism**
+  -
 
-Psychological Acceptability
+**Psychological Acceptability**
+  -
 
-Zero Trust Architecture (ZTA)
+**Zero Trust Architecture (ZTA)**
+  -
 
-Stateful Firewall
+**Stateful Firewall**
+  -
 
-Packet Filtering Firewall
+**Packet Filtering Firewall**
+  -
 
-Application Layer Firewall
+**Application Layer Firewall**
+  -
 
-IDS
+**IDS**
+  -
 
-IPS
+**IPS**
+  -
 
-Asymmetric Encryption
+**Asymmetric Encryption**
+  -
 
-Symmetric Encryption
+**Symmetric Encryption**
+  -
 
-DoS
+**DoS**
+  -
 
-DDoS
+**DDoS**
+  -
 
-Ping Flood
+**Ping Flood**
+  -
 
-Smurf Attack
+**Smurf Attack**
+  -
 
-Dictionary Attack
+**Dictionary Attack**
+  -
 
-Brute Force Attack
+**Brute Force Attack**
+  -
 
-SQL Injection Attack
+**SQL Injection Attack**
+  -
 
-Risk Mitigation
+**Risk Mitigation**
+  -
 
-Risk Avoidance
-
- 
-
-Complete Network Attack worksheet
+**Risk Avoidance**
+  -
 
 ------------------------
 
- 
-
-Call#6
+# Call#6
 
  
 
-Discretionary Access Control
+**Discretionary Access Control**
+  -
 
-Role-based Access Control
+**Role-based Access Control**
+  -
 
-Attribute-Based Access Control
+**Attribute-Based Access Control**
+  -
 
-Rule-Based Access Control
+**Rule-Based Access Control**
+  -
 
-Context-based Access Control
+**Context-based Access Control**
+  -
 
-WEP
+**WEP**
+  -
 
-WPA
+**WPA**
+  -
 
-WPA2
+**WPA2**
+  -
 
-WPA3
+**WPA3**
+  -
 
-Ad Hoc Mode
+**Ad Hoc Mode**
+  -
 
-Infrastructure Mode
+**Infrastructure Mode**
+  -
 
-Evil Twin Attack
+**Evil Twin Attack**
+  -
 
-Deauthentiation Attack
+**Deauthentiation Attack**
+  -
 
-Rouge Access Point
+**Rouge Access Point**
+  -
 
-AAA Model
+**AAA Model**
+  -
 
-Separation of Duties
+**Separation of Duties**
+  -
 
-GDPR
+**GDPR**
+  -
 
-HIPPA
+**HIPPA**
+  -
 
-FERPA
+**FERPA**
+  -
 
-GLBA
+**GLBA**
+  -
