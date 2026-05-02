@@ -179,14 +179,16 @@
 
  
 
-**IaaS**
-  -
+**IaaS** 
+  - Service provider gives you on-demand access to infrastructure services, including compute, storage, networking, and virtualization. You manage evertyhing else i.e. the virtual machines, operating systems, middleware, apps and your data.
+  - no need to maintain or update your own data center infrastructure.
 
 **PaaS**
-  -
+  - The service provider delivers and amnages all the hardware and software resources needed for application development. You write the code and manage all the apps and data but you do not have to manage or maintain the software development platform. 
 
 **SaaS**
-  -
+  - Service provider delivers and manages the entire application stack (from the hardware infrastructure all the way to the application itself) throught the internet.
+  - All updates, bug fixes and other general maintenance to all components are handled by the provider. All you have to do is connect to the app.
 
  
 
@@ -194,28 +196,32 @@
 
  
 **Private cloud**
-  -
+  - Cloud model is used by only one organization or tenant and is not shared with other organizations.
 
 **Public cloud**
-  -
+  - This model is available over the internet and for public use. You share the same hardware like storage and netwrok with other organizations. The cloud provider is responsible for the network infratsture.
 
 **Hybrid cloud**
-  -
+  - Combines the features of using both private and public cloud. This model with store and uses applications in both models.
 
 **Multi cloud**
-  -
+  - Uses different cloud services from more than one cloud provider. 
 
 **Community cloud**
-  -
+  - This model is shared between different organizations. Usually these organizations will be in the same industry or share a common goal.
 
 
 ### Types of Hypervisor 
 
 **Type 1**
-  -
+  - Bare Metal
+  - loaded directly on the server hardeare with no underlying operating system
+  - usually found in large data centers to provide performance and large-scale virtualization
 
 **Type 2**
-  -
+  - Has an underlying operating system already installed.
+  - Best suited for smaller scal virtual environments like school, home or lab environments.
+  - download and install the hypervisor like you would any other applicaiton. runs on top of an existin operating system.
 
  
 --------
@@ -231,34 +237,40 @@
 ### Teach Back Topics:
 
 **CIA**
-  -
+  - Confidentiality
+     - helps limit access to information, preventing an unauthorized user from accessing, copying, or transmitting the information
+  - Integrity
+     - Helps maintain the accuracy of data to identify the trustworthiness of the information
+  - Availability
+     - Ensures the data is always accessible by its authorized user
 
 **White hat**
-  -
+  - IT professionals who specialize in penetrating and compromising network security to help an organization
 
 **Black hat**
-  -
+  - have malicious intent and breach systems for profits
 
 **Grey hat**
-  -
+  - has no malicious intent but often break laws by not having permission
 
 **Blue team**
-  -
+  - Team to try and defend during simulation attacks
 
 **Red team**
-  -
+  - Team to attack during simulation attacks
 
 **White team**
-  -
+  - Team to observed red and blue teams during simulation attacks
 
 **Purple team**
-  -
+  - Red and Blue team when they debrief and cross-train each other 
 
 **Zero day**
-  -
+  - The exploit or vulnerability is not knnown yet
 
 **Script kiddie**
-  -
+  - Someone that has no understanding of the coding they are using
+  - uses tools and scripts developed by more advanced hackers
 
 **Man in the middle attack**
   -
