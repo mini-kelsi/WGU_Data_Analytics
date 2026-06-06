@@ -11,15 +11,22 @@
 **WAP**
   - Wireless Access Point
   -  Device used to connect devices to a newtwork by wireless means
+  -  typically, will connect to a network switch as an extention of the LAN creating a WLAN
 
 **Router**
-  -
+  - Layer 3
+  - interconnect different networks like multiple LAN buildings or LAN to WAN network.
+  - uses IP address to determine how to route network gtraffic to the destination.
 
  **Switch**
-   -
+   - Layer 2
+   - central device in a star topology
+   - the switch learns the MAC addresses that come from the devices that are connected to the switch's ports. the switch creates a table using the MAC addresses to forward frames to the correct device.
+   - if the switch does not know the destination MAC address then it will send a broadcast (ARP) to find out the MAC address
 
 **Hub**
-  -
+  - Layer 1
+  - hubs send the signal to all connected devices regardless of destination.
   
 
 
@@ -31,13 +38,15 @@
   - network where devices are all connected to a centeral point
 
 **Ring**
-  -
+  - Also referred to by Token Ring
+  - passes data from one device to another using their directly connected neighbor
+  - each device has a neighboring device connected on each side
 
 **Bus**
-  -
+  - a signle cable connects all of the computers and other network devices together
 
-**Mesh**
-  -
+**Mesh** 
+  - has a connection to every device and will provide the best option for redundancy in case of a device failure
 
  
 
@@ -63,7 +72,7 @@
   - provides wireless network connectivity to mobile devices
 
 **WAN**
-  -
+  - could connect to a server across the contry or across the world.
 
  
 
@@ -148,10 +157,11 @@
   -
 
 **Nslookup**
-  -
+  - can be used to find IP address to host name or host name to IP address using a DNS server
 
 **Dig**
-  -
+  - Linux
+  - basically same as Nslookup but more detailed
 
 **Ipconfig**
   -
@@ -226,7 +236,7 @@
  
 --------
 
-# Call#4
+# Call #4
 
  
 
@@ -234,7 +244,7 @@
 
  
 
-### Teach Back Topics:
+
 
 **CIA**
   - Confidentiality
@@ -273,19 +283,20 @@
   - uses tools and scripts developed by more advanced hackers
 
 **Man in the middle attack**
-  -
+  - Occurs when an attacker uses spoofing to insert their device between two legitimate endpoints and transparently intercepts, relays or alters the traffic flowing between them
 
 **Phishing**
-  -
+  - can be done through email, text, voicemail and other methods.
+  - goal is to have the target or user disclose personal information
 
 **Vulnerability**
-  -
+  - A weakness in the system design, implementation, software or software code
 
 **Exploit**
-  -
+  - refers to software, tools, or technique that takes advantage of an vulnerability that can lead to unauthorized access, denial of service attack or some other type of attack on the network or computer system.
 
 **Social Engineering**
-  -
+  - Act of manipulating human trust to gain access or information
  
 
 --------------
@@ -299,151 +310,193 @@
  
 
 **Data retention policy**
-  -
+  - A set of guidelines defining what information an organization keeps, how long it is stored, and how it is securely disposed of
 
 **AUP (Acceptable use policy)**
-  -
+  - A policy that determines how the network will be used by employees and guest. Defines what users ca and cannot do while using the organization's IT resources and systems.
 
 **BYOD policy**
-  -
+  - Employees are permitted to use their personal mobile devices to access enterprice data and systems.
 
 **Least Privilege**
-  -
+  - Limits who has access to the data that is being protected by using system file permissions.
 
 **Fails Safe default**
-  -
+  - Concept stating that when a system, application, or device fails, loses power, or encounters an unkown error, it should revert ot its most restrictive and secure stat.
 
 **Economy of Mechanism**
-  -
+  - The security mechanisms should be simple helps keep the system simply to understand and maintain will help with security vulnerability within the system and reduce the attack surface for an attacker to exploit.
 
 **Complete Mediation**
-  -
+  - Every access to an object must be validated and checked. Will not use previous checks or validations.
 
 **Open Design**
-  -
+  - Model states that the passwords and encryption keys should be kept secret and not the implementation of the system itself. The focus is to protect authentication methods like passwords and encryption keys for securing data. The goal here is not to hide how the system opeates.
 
 **Separation of Privilege/Duties**
-  -
+  - Concepts does not allow a single person to have complete control over a device or system. This prevents fraud and misuse of the device or system and provides overall acountability.
 
 **Least Common Mechanism**
-  -
+  - Minimize shared mechanisms between users and processes. In this model, we want to reduce the number of shared resources that are being accessed by multiple users.
 
 **Psychological Acceptability**
-  -
+  - Relies on the interface between the human and the system to be eaasy to use. This will help with protecting the system security. If the system security methods are too hard, the user will avoid them or try to find a way around the security measure.
 
 **Zero Trust Architecture (ZTA)**
-  -
+  - Does not assume authomatic trust between devices based on location of where the device is on a network.
+  - Operates on the principle of never trust, always verify.
 
 **Stateful Firewall**
-  -
+  - Keeps track of active connections and uses this information to make, allow, or deny decisions.
 
 **Packet Filtering Firewall**
-  -
+  - Inspects source IP address, destination IP address, and protocol port numbers.
+  - Has a rule table and inspect snetwork traffic and compares the network traffic against the rule table. Table determines if traffic is allowed in or not
 
 **Application Layer Firewall**
-  -
+  - Does a deep pack inspection of the network traffic
+  - inspects the payload to determine what type of application is being used. 
 
 **IDS**
-  -
+  - Intrustion Detection System
+  - will monitor network traffic and look for any pontential threats
+  - will log threats and send a message to the admin
 
 **IPS**
-  -
+  - Intrustion Prevention System
+  - Intercepts and prevents threats
 
 **Asymmetric Encryption**
-  -
+  - Uses 3 keys, private and public key
 
 **Symmetric Encryption**
-  -
+  - uses the same key to encrypt and decrypt
 
 **DoS**
-  -
+  - Denial of Service
+  - Where the attacker is trying to disrupt network services, or completely bring down the service
 
 **DDoS**
-  -
+  - Distributed Denial of Service
+  - Similar to DoS in style, but has multiple attakers instead of one attacker
 
 **Ping Flood**
-  -
+  - Network layer 3
+  - Attacker sends a large scale amount of ICMP packets to a target eevice. This DoS attack is meant to overwhlm the target and slow it down or crash it.
 
 **Smurf Attack**
-  -
+  - DDoS attack
+  - Attacker uses a spoofed IP address from a real device like a server on the network. The attacker uses the broadcase address and sends ICMP request to the broadcast address, which responds to the real server. This slows and even crashes the system.
 
 **Dictionary Attack**
-  -
+  - will use a predefined list of common words and phrases to match a passwod to a computer or application.
 
 **Brute Force Attack**
-  -
+  - Uses every combo of a password to gain access to a device or system
 
 **SQL Injection Attack**
-  -
+  - happens when the attacker inputs data in a form field that is incorrect. Can potentionally pass a command that could alter the database or give the attacker access to the database.
 
 **Risk Mitigation**
-  -
+  - Not all risk can be avoided/eliminated
+  - the goal is not to elimiate the threat/risk but to emplement security measures to minimize the impact of potential risks to the organization
 
 **Risk Avoidance**
-  -
+  - occurs when an organizatgion decides not to accept any risk and eliminates anything associated with that risk.
+  - goal is to eliminate as many risk as possible that would affect the organization negatively.
 
 ------------------------
 
-# Call#6
+# Call #6
 
  
 
 **Discretionary Access Control**
-  -
+  - The owner of the resource decides how the resource will be shared.
+  - best suited for smaller networks
 
 **Role-based Access Control**
-  -
+  - Model provides access to groups rather than an individual. Permissions will be assigned to groups based on a job role.
 
 **Attribute-Based Access Control**
-  -
+  - Model can provide more specific access than just using a role-based user. Can combine different attruibutes like the user trying to login,what network, location, time of at or type of computer they are using
 
 **Rule-Based Access Control**
-  -
+  - This is a predefined set of rules that are in place to portecgt the network. The rules will either allow or deny based on the way the policy is set up. Firewalls us the model to protect the network.
 
 **Context-based Access Control**
-  -
+  - Does a deeper inspection of the network trraffic to identify any abnormalies in the packets. The network device is looking at how the packets are being used.
 
 **WEP**
-  -
+  - Wired Equivlent Privacy
+  - Developed to add security over wireless networks.
+  - legacy wireless encryption protocol
 
 **WPA**
-  -
+  - Wifi Protected Access
+  - was developed to fix security issues with WEP
+  - included MIC (Message Integrity Check) to prevent attackers from intercepting or modifying wireless traffic
 
 **WPA2**
-  -
+  - offers the option to use a pre-share key or enterprise
+  - uses AES encryption instead of TKIP (Temporal Key Integrity Protocol)
 
 **WPA3**
-  -
+  - newest standard and improements over WPA2
+  - encryption is unique for each user session
+  - uses PMF (protected Management Frames) for wireless connection
 
 **Ad Hoc Mode**
-  -
+  - Deos not use a central device to connect to the wireless network liek a WAP
+  - wireless devices connect directly to each other to send and recieve data
 
 **Infrastructure Mode**
-  -
+  - Wireless mode is used when the wireless client connects to the wireless network using a WAP
 
 **Evil Twin Attack**
-  -
+  - One type of rouge AP that is set up with the same SSID as a valid AP. When connected to the evil twin, attacker can see all the data being sent between the user and their destination
 
 **Deauthentiation Attack**
-  -
+  - Occurs when an attacker sends a wireless frame to the AP, telling the AP  to end the session for the client
 
 **Rouge Access Point**
-  -
+  - An AP  that has been installed on a secured company network by an eployee without permission.
+  - Might also be instealled by a hacker to conduct a man-in-the-middle attack
 
 **AAA Model**
-  -
+  - Authentication
+     - Confirms user is who they claim to be
+     - usernames and passwords
+     - public key infrastructure (PKI) certificates
+   - Authornization
+     - Define what the user can access
+     - give permissions to a user
+     - write and delete / read-only
+   - Accounting
+     - Report on user's access
+     - provides forensic trail after a security breach
+     - logs successful and unsuccessful connection attempts
 
 **Separation of Duties**
-  -
+  - Concept does not allow a single person to have complete control over a device or system. this prvents fraud and misuse of the device or system and provides overall accountagbility. A minimum of two people would be required to oversee a particular task.
 
 **GDPR**
-  -
+  - General Data Protection Regulation
+  - Europena Union Law
+  - regulates how organizations handle personal data of indivduals with the European Union.
+  - Was created to protect the individiuals' rights to privacy and control over their personal information
 
 **HIPPA**
-  -
+  - Heatlh Insurance Portability and Accountability Act
+  - Passed in 1996
+  - requires healthcare organizations to implement security and privacy controls to ensure patient privacy.
 
 **FERPA**
-  -
+  - Family Education Rights and Privacy Act
+  - Passed in th 1974
+  - Protects the private data of students and their school record
 
 **GLBA**
-  -
+  - Gramm-Leach-Bliley Act
+  - Passed in 1999
+  - requires all types of financial institiutions to protect customers' private financial information
