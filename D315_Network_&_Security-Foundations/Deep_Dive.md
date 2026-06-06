@@ -111,50 +111,67 @@
 
  
 
-# List and describe what happens at each layer of the OSI model, the network devices at each layer and protocols at those layers.
+### List and describe what happens at each layer of the OSI model, the network devices at each layer and protocols at those layers.
 
 
  **Application**
-   -
+   - This layer is responsible for network applications (like HTTP or FTP) and their production of data to be transferred over the network. This is what is displayed for the end user to see on the computer screen.
+
+**Presentation**
+   - This layer is responsible for translating data from the application layer into the format required to transmit the data over the network as well as encrypting the data for security if encryption is used.
 
  **Session**
-   -
+   - This layer is responsible for connection establishment, session maintenance, and authentication.
 
- **Application**
-   -
 
  **Transport**
-   -
+   -The transport layer is responsible for end-to-end communication between devices. It is responsible for the reliable delivery of data. It segments and reassembles data in the correct order for it to be sentg ot the receiving device. It may also handle the reliable delivery of data and any retries of data that are lost or corrupted. This layer is often called the heart of the OSI. The protocls *TCP* and *UDP*.
+
+  - **TCP**
+     - Considered connection-oriented and reliable
+     - ensures all data has been delivered and checks for errors during data transmission
+  - **UDP**
+     - Connectionless, does not first establish a connection before sending data like TCP.
+     - Does not guarantee delivery.
+     - Best used for real time applications like online gaming, voice applications and video conferencing.
 
  **Network Layer**
-   -
+   - This layer is responsible for the transmission of data between hosts in different networks as well as routing of data packets. This layer is implemented through the use of devices usch as *routers* and some switches.
 
  **Data Link**
-   -
+   - This layer is implemented through the use of devices such as *switches* and *bridge devices*, as well as anything with a netwrok interface, like wireless or wired network cards. This layer uses MAC addresses to forward frames to the destination. Ensures the frames are free from errors before sending data.
 
  **Physical Layer**
-   -
+   - This layer is responsible for the physical connections of the devices in the network. This layer is implemented through the use of devices such as *hubs*, *repeaters*, *modem devices*, and *physical cabling*.
  
 
-# Network Commands
+### Network Commands
 
  
 
-# Describe the network commands:
+### Describe the network commands:
 
  
 
 **Ping**
-  -
+  - tests connectivity to other hosts
+  - sends an ICMP echo request to a host and listens for the reply
+  - measures latency between two devices
 
 **Traceroute**
-  -
+  - Linux command
+  - will show you the path your network traffic is taking to a destination
+  - can test latency for how long it takes a packet to reach destination and back
+  - shows "hops"
 
 **Tracert**
-  
+   - Microsoft Windows
+   - same input as Traceroute
 
 **Netstat**
-  -
+  - See what connections are active on the local computer
+  - useful for troubleshooting and capacity management
+  - displays routing information for network adapters
 
 **Nslookup**
   - can be used to find IP address to host name or host name to IP address using a DNS server
@@ -164,16 +181,20 @@
   - basically same as Nslookup but more detailed
 
 **Ipconfig**
-  -
+  - Microsoft Windows command
+  - will display our IP address information on our local computer.
+  - includes IP address, subnet Mask and Default Gateway
 
 **Ifconfig**
-  -
+  - Linux Command
+  - will display the IP address information on your network adapter. Similar to Ipconfig
 
 **Telnet**
-  -
+  - unencrypted and username, password, and data is sent in clear text for anyone to see
+  - good for video calls
 
 **SSH**
-  -
+  - encrypted so the username, password and data is protected by encrypted
 
  
 
