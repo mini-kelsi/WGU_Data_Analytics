@@ -79,25 +79,34 @@
 ### Cables
 
 **Coaxial Cable**
-  -
+  - primarily used to connect cable TV to the ISP 
 
 **Cat 5**
-  -
+  - Shielded Twisted Pair
+  - 100 Mbps upto 100m (328ft)
 
 **Cat 5e**
-  -
+  - Shielded Twisted Pair
+  - 1000 Mbps (1 Gpbs) upto 100m (328ft)
 
 **Cat 6**
-  -
+  - Shielded Twisted Pair
+  - 10,000 Mbps (10 Gpbs) upto 55m (180ft)
 
 **Cat 6A**
-  -
+  - Shielded Twisted Pair
+  - 10,000 Mbps (10 Gbps) upto 100m (328ft)
 
 **Single Mode Fiber**
-  -
+  - Travels arther distances than multi-mode fiber.
+  - Transmits data witha single light path.
+  - Less susceptible to EMI compared to UTP or STP.
 
 **Multi Mode Fiber**
-  -
+  - Doesn't travel as far as single mode fiber.
+  - Less expensive than single mode fiber.
+  - Transmits data witha multiple light path.
+  - Less susceptible to EMI compared to UTP or STP.
 
  
 
